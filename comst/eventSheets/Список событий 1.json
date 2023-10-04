@@ -69,6 +69,15 @@
 					"parameters": {
 						"state": "not-mirrored"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 559024249415310,
+					"parameters": {
+						"animation": "\"Gof_Run\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 631977711996849
@@ -92,6 +101,15 @@
 					"sid": 958106912819594,
 					"parameters": {
 						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 369519429418401,
+					"parameters": {
+						"animation": "\"Gof_Run\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -140,16 +158,39 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-animation-playing",
+					"id": "on-stopped",
 					"objectClass": "Goffman",
-					"sid": 198904568989010,
-					"parameters": {
-						"animation": "\"Gof_Idle\""
-					}
+					"sid": 398103350772991,
+					"behaviorType": "Платформер"
 				}
 			],
 			"actions": [],
-			"sid": 613554279247292
+			"sid": 412853644722526,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-on-floor",
+							"objectClass": "Goffman",
+							"sid": 955500682791004,
+							"behaviorType": "Платформер"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Goffman",
+							"sid": 919704166880889,
+							"parameters": {
+								"animation": "\"Gof_Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 901636933250171
+				}
+			]
 		}
 	],
 	"sid": 567197488118894

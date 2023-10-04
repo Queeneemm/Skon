@@ -203,6 +203,143 @@
 				}
 			],
 			"sid": 737887694425070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 996509467099561,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 105368099474222,
+					"parameters": {
+						"object-to-create": "Tornado",
+						"layer": "0",
+						"x": "Goffman.X",
+						"y": "Goffman.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 753913473300445,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "Goffman",
+							"sid": 725633072376427
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Tornado",
+							"sid": 624335155851544,
+							"behaviorType": "Пуля",
+							"parameters": {
+								"angle": "180"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Tornado",
+							"sid": 194596698059659,
+							"parameters": {
+								"state": "flipped"
+							}
+						}
+					],
+					"sid": 906197885951253
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Tornado",
+					"sid": 541674116140036,
+					"parameters": {
+						"object": "Box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-impulse-at-angle",
+					"objectClass": "Box",
+					"sid": 543660164160003,
+					"behaviorType": "Физика",
+					"parameters": {
+						"impulse": "1",
+						"angle": "270",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Tornado",
+					"sid": 267356125840472
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 312998375592977,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				}
+			],
+			"sid": 497934781525493
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Goffman",
+					"sid": 609492971479124,
+					"parameters": {
+						"object": "Platform"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Platform",
+					"sid": 201596941283988,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "apply-force-at-angle",
+					"objectClass": "Platform",
+					"sid": 320894590445653,
+					"behaviorType": "Физика",
+					"parameters": {
+						"force": "1",
+						"angle": "90",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 146363116641614
 		}
 	],
 	"sid": 567197488118894

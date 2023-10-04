@@ -1,19 +1,14 @@
 {
-	"name": "Platform",
+	"name": "Box",
 	"plugin-id": "Sprite",
-	"sid": 529902524015927,
+	"sid": 746411160612624,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",
 			"name": "Физика",
-			"sid": 568031583474716
-		},
-		{
-			"behaviorId": "jumpthru",
-			"name": "СквознаяПлатформа",
-			"sid": 182470512081286
+			"sid": 513802374315817
 		}
 	],
 	"effectTypes": [],
@@ -22,20 +17,20 @@
 			{
 				"frames": [
 					{
-						"width": 10,
-						"height": 10,
+						"width": 12,
+						"height": 13,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3957543,
+						"imageSpriteId": 9027412,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 226477209222286,
+				"sid": 758100832016092,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

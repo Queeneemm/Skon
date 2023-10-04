@@ -28,6 +28,20 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"Физика": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
 						}
 					},
 					"ownData": {
@@ -36,7 +50,7 @@
 							"height": 216,
 							"max-width": 427,
 							"max-height": 242,
-							"data": "2719x0,1,234x0,14,40,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,42,5x0,2,234x0,2,6x0,2,234x0,3,6x0,2,241x0,15,40,229x0,1,10x0,15,28,40,228x0,2,4x0,64,5x0,15,28,41,227x0,14,28,40,3x0,77,52,4x0,15,28,41,227x0,15,2x28,2x27,40,77,62,52,2x61,0,15,28,41,227x0,15,4x28,41,77,5x62,15,28,41,227x0,15,4x28,41,77,5x62,15,28,41,227x0,15,5x28,40,5x62,15,28,41,227x0,16,29,5x28,5x27,2x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
+							"data": "2235x0,1,241x0,2,241x0,2,234x0,14,40,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,42,5x0,2,234x0,2,6x0,2,234x0,3,6x0,2,241x0,15,40,229x0,1,10x0,15,28,40,228x0,2,4x0,64,5x0,15,28,41,227x0,14,28,40,3x0,77,52,4x0,15,28,41,227x0,15,2x28,2x27,40,77,62,52,2x61,0,15,28,41,227x0,15,4x28,41,77,5x62,15,28,41,227x0,15,4x28,41,77,5x62,15,28,41,227x0,15,5x28,40,5x62,15,28,41,227x0,16,29,5x28,5x27,2x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
 						},
 						"tile-width": 10,
 						"tile-height": 10,
@@ -136,6 +150,140 @@
 						"y": 564.4191002706433,
 						"width": 10,
 						"height": 11,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tornado",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 261039,
+					"instanceVariables": {},
+					"behaviors": {
+						"Пуля": {
+							"properties": {
+								"speed": 250,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -79.87589595091791,
+						"y": 721.9288042489206,
+						"width": 12,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 954782,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "circle",
+								"prevent-rotation": false,
+								"density": 10,
+								"friction": 0,
+								"elasticity": 0,
+								"linear-damping": 0,
+								"angular-damping": 0,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 130.86555204197785,
+						"y": 449.86722739236126,
+						"width": 12,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Platform",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 657431,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"СквознаяПлатформа": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 103.95873040454289,
+						"y": 506.0353009490497,
+						"width": 10,
+						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

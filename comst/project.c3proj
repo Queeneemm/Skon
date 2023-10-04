@@ -83,7 +83,26 @@
 			"Мышь",
 			"t"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Icepeak",
+					"Icepeak_cut",
+					"IronDoor_up",
+					"IronDoor_bot",
+					"Lava_ball",
+					"Lava_ger",
+					"Lever_Off",
+					"Lever_On",
+					"Platform",
+					"Spawn",
+					"Chest",
+					"Chest_Open"
+				],
+				"subfolders": [],
+				"name": "Object"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],

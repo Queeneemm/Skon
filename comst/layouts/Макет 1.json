@@ -148,64 +148,6 @@
 						],
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Gof_IDLe",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 17,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 21.269968032836914,
-						"y": 645.0729370117188,
-						"width": 9,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Gof_Run",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 34.72340393066406,
-						"y": 629.245361328125,
-						"width": 9,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 812796062190450,
@@ -615,7 +557,7 @@
 					"type": "Goffman",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Gof_Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -646,8 +588,8 @@
 					"world": {
 						"x": 125.12654562367743,
 						"y": 564.0283298136603,
-						"width": 5,
-						"height": 12,
+						"width": 9,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -135,6 +135,21 @@
 					"sid": 989002218706312
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Goffman",
+					"sid": 198904568989010,
+					"parameters": {
+						"animation": "\"Gof_Idle\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 613554279247292
 		}
 	],
 	"sid": 567197488118894

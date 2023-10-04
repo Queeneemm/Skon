@@ -117,16 +117,7 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Goffman",
-					"sid": 666196399459129,
-					"parameters": {
-						"object": "КартаТайлов2"
-					}
-				}
-			],
+			"conditions": [],
 			"actions": [],
 			"sid": 403025007361534,
 			"children": [

@@ -57,13 +57,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "jumpthru",
-			"name": "Сквозная платформа",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "scrollto",
 			"name": "Следить за",
 			"author": "Scirra",
@@ -82,7 +75,6 @@
 		"items": [
 			"КартаТайлов",
 			"Goffman",
-			"КартаТайлов2",
 			"Частицы",
 			"Частицы2",
 			"Частицы3",

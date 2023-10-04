@@ -36,7 +36,7 @@
 							"height": 216,
 							"max-width": 427,
 							"max-height": 242,
-							"data": "2469x0,22,483x0,73,82,91,5x0,22,233x0,74,56,92,239x0,74,56,92,5x0,1,233x0,74,56,92,5x0,2,233x0,75,84,93,5x0,2,241x0,2,241x0,2,241x0,2,241x0,11,28,232x0,46,55,64,5x0,11,29,232x0,47,56,77,52,4x0,11,29,231x0,10,28,0,77,62,52,2x61,70,11,29,230x0,31,21,30,0,77,5x62,11,29,232x0,47,56,77,5x62,11,29,232x0,47,56,77,5x62,11,29,228x0,31,11x19,20,29,229x0,12,7x21,20,3x21,30,237x0,2,236x0,1,4x0,3,236x0,11,19,28,234x0,1,4x0,11,20,29,234x0,2,4x0,11,20,29,234x0,12,4x23,2x20,30,239x0,11,29,239x0,10,21,30,239x0,2,241x0,3,1209x0,22,92879x0"
+							"data": "2469x0,22,249x0,1,234x0,14,40,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,16,42,5x0,2,241x0,2,241x0,2,241x0,15,40,240x0,15,28,40,233x0,64,5x0,15,28,41,233x0,77,52,4x0,15,28,41,229x0,14,2x27,40,77,62,52,2x61,0,15,28,41,228x0,14,3x28,41,77,5x62,15,28,41,228x0,15,3x28,41,77,5x62,15,28,41,227x0,14,5x28,40,5x62,15,28,41,227x0,16,29,5x28,5x27,2x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
 						},
 						"tile-width": 10,
 						"tile-height": 10,
@@ -94,62 +94,7 @@
 			"name": "Слой 1",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "КартаТайлов2",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 10,
-						"tile-height": 10,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {
-						"СквознаяПлатформа": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 384,
-							"height": 216,
-							"max-width": 384,
-							"max-height": 216,
-							"data": "2173x0,11,214x0,8,215x0,9,3x0,7,211x0,4,215x0,8,3x0,7,211x0,9,216x0,11,6x0,2,208x0,11,215x0,11,215x0,11,434x0,7,3x0,2,208x0,38,215x0,39,215x0,39,2x0,7,3x0,5,208x0,40,2369x0,4x5,212x0,4x5,212x0,4x5,212x0,4x5,212x0,4x5,74293x0"
-						},
-						"tile-width": 10,
-						"tile-height": 10,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": 10.320794095088473,
-						"y": 360.35148627547494,
-						"width": 3840,
-						"height": 2160,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 812796062190450,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -510,35 +455,6 @@
 					"world": {
 						"x": 201.72188066793208,
 						"y": 506.7475387055696,
-						"width": 10,
-						"height": 10,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Stair",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 15,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 201.68063925818709,
-						"y": 497.0043067701263,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,

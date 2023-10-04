@@ -28,7 +28,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Клавиатура",
-							"sid": 965169116630918,
+							"sid": 752440488623732,
 							"parameters": {
 								"key": 38
 							}
@@ -38,10 +38,10 @@
 						{
 							"id": "set-vector-y",
 							"objectClass": "Goffman",
-							"sid": 281343061666505,
+							"sid": 528821267769551,
 							"behaviorType": "Платформер",
 							"parameters": {
-								"vector-y": "-150"
+								"vector-y": "-170"
 							}
 						}
 					],
@@ -55,7 +55,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Клавиатура",
-					"sid": 502837202168199,
+					"sid": 561171037681852,
 					"parameters": {
 						"key": 39
 					}
@@ -88,7 +88,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Клавиатура",
-					"sid": 307299940626869,
+					"sid": 639920301697474,
 					"parameters": {
 						"key": 37
 					}
@@ -136,7 +136,7 @@
 						{
 							"id": "key-is-down",
 							"objectClass": "Клавиатура",
-							"sid": 839915750520402,
+							"sid": 727684919396713,
 							"parameters": {
 								"key": 40
 							}
@@ -191,6 +191,27 @@
 					"sid": 901636933250171
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 417355553059764,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 291822651515846
+				}
+			],
+			"sid": 737887694425070
 		}
 	],
 	"sid": 567197488118894

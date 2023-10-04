@@ -1,0 +1,32 @@
+{
+	"name": "Main Menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Мышь",
+					"sid": 304269642798234,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "t"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 429020504610056,
+					"parameters": {
+						"layout": "Game1"
+					}
+				}
+			],
+			"sid": 353313239364980
+		}
+	],
+	"sid": 281035092602851
+}

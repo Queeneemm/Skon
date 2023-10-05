@@ -432,7 +432,37 @@
 			"name": "Слой 1",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Fire1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 704514,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -74.27492587742239,
+						"y": 516.0458648691572,
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 812796062190450,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

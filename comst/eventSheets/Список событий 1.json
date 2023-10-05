@@ -237,19 +237,6 @@
 						"image-point": "1",
 						"create-hierarchy": false
 					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 184025365155535,
-					"parameters": {
-						"seconds": "5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Tornado",
-					"sid": 533143036538981
 				}
 			],
 			"sid": 753913473300445,
@@ -267,7 +254,7 @@
 						{
 							"id": "set-angle-of-motion",
 							"objectClass": "Tornado",
-							"sid": 624335155851544,
+							"sid": 247950148181009,
 							"behaviorType": "Пуля",
 							"parameters": {
 								"angle": "180"
@@ -434,6 +421,27 @@
 					"sid": 932778561778777
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 278636687971194,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tornado",
+					"sid": 123206306848636
+				}
+			],
+			"sid": 666661589539999
 		}
 	],
 	"sid": 567197488118894

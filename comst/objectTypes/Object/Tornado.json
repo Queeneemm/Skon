@@ -2,7 +2,7 @@
 	"name": "Tornado",
 	"plugin-id": "Sprite",
 	"sid": 285233473569153,
-	"isGlobal": true,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{

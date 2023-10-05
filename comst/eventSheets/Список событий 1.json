@@ -45,7 +45,8 @@
 							}
 						}
 					],
-					"sid": 429040240865697
+					"sid": 429040240865697,
+					"isOrBlock": true
 				}
 			]
 		},
@@ -218,16 +219,14 @@
 			],
 			"actions": [
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 105368099474222,
+					"id": "spawn-another-object",
+					"objectClass": "Goffman",
+					"sid": 595118780927804,
 					"parameters": {
-						"object-to-create": "Tornado",
+						"object": "Tornado",
 						"layer": "0",
-						"x": "Goffman.X",
-						"y": "Goffman.Y",
-						"create-hierarchy": false,
-						"template-name": "\"\""
+						"image-point": "1",
+						"create-hierarchy": false
 					}
 				}
 			],
@@ -250,14 +249,6 @@
 							"behaviorType": "Пуля",
 							"parameters": {
 								"angle": "180"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Tornado",
-							"sid": 194596698059659,
-							"parameters": {
-								"state": "flipped"
 							}
 						}
 					],

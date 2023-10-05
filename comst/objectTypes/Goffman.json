@@ -14,6 +14,11 @@
 			"behaviorId": "scrollto",
 			"name": "СледитьЗа",
 			"sid": 139217555167108
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Направлений",
+			"sid": 618860344488487
 		}
 	],
 	"effectTypes": [],
@@ -51,6 +56,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5555555555555556,
+								"y": 0.5
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -84,6 +96,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5555555555555556,
+								"y": 0.5
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -117,6 +136,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5555555555555556,
+								"y": 0.5
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}
@@ -163,6 +189,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5555555555555556,
+								"y": 0.5
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					},
@@ -198,6 +231,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.5555555555555556,
+								"y": 0.5
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

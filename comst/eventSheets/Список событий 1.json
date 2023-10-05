@@ -270,31 +270,62 @@
 			],
 			"actions": [
 				{
-					"id": "apply-impulse-at-angle",
-					"objectClass": "Box",
-					"sid": 443948403918205,
-					"behaviorType": "Физика",
-					"parameters": {
-						"impulse": "0.3",
-						"angle": "Tornado.Angle",
-						"image-point": "0"
-					}
-				},
-				{
 					"id": "destroy",
 					"objectClass": "Tornado",
 					"sid": 267356125840472
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 312998375592977,
-					"parameters": {
-						"seconds": "1.0"
-					}
 				}
 			],
-			"sid": 497934781525493
+			"sid": 497934781525493,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "Goffman",
+							"sid": 656415009883163
+						}
+					],
+					"actions": [
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Box",
+							"sid": 502384489854506,
+							"behaviorType": "Физика",
+							"parameters": {
+								"impulse": "0.3",
+								"angle": "180",
+								"image-point": "0"
+							}
+						}
+					],
+					"sid": 979258369468495
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 872298910968589
+						}
+					],
+					"actions": [
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Box",
+							"sid": 722579691160551,
+							"behaviorType": "Физика",
+							"parameters": {
+								"impulse": "0.3",
+								"angle": "0",
+								"image-point": "0"
+							}
+						}
+					],
+					"sid": 275599593224278
+				}
+			]
 		},
 		{
 			"eventType": "block",

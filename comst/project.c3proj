@@ -85,6 +85,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Turret",
+			"name": "Турель",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "jumpthru",
 			"name": "Сквозная платформа",
 			"author": "Scirra",

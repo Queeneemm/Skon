@@ -43,6 +43,15 @@
 							"parameters": {
 								"vector-y": "-170"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Goffman",
+							"sid": 807814506755988,
+							"parameters": {
+								"animation": "\"Gof_Up\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 429040240865697,
@@ -369,24 +378,49 @@
 				{
 					"id": "is-enabled",
 					"objectClass": "Slime",
-					"sid": 940929570128129,
-					"behaviorType": "ДвижениеК"
+					"sid": 387292368580840,
+					"behaviorType": "Турель"
 				}
 			],
 			"actions": [
 				{
-					"id": "move-to-object",
+					"id": "add-object-to-target",
 					"objectClass": "Slime",
-					"sid": 536524331420405,
-					"behaviorType": "ДвижениеК",
+					"sid": 587890162385827,
+					"behaviorType": "Турель",
 					"parameters": {
-						"object": "Goffman",
-						"image-point": "0",
-						"mode": "direct"
+						"target": "Goffman"
 					}
 				}
 			],
-			"sid": 784160715081853
+			"sid": 784160715081853,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-target",
+							"objectClass": "Slime",
+							"sid": 363528335807335,
+							"behaviorType": "Турель"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Slime",
+							"sid": 418910347119194,
+							"behaviorType": "ДвижениеК",
+							"parameters": {
+								"object": "Goffman",
+								"image-point": "2",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 932778561778777
+				}
+			]
 		}
 	],
 	"sid": 567197488118894

@@ -306,7 +306,7 @@
 					"type": "Slime",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Slime_IDLe",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -317,11 +317,24 @@
 						"ДвижениеК": {
 							"properties": {
 								"max-speed": 50,
-								"acceleration": 5,
+								"acceleration": 30,
 								"deceleration": 600,
 								"rotate-speed": 0,
 								"set-angle": false,
-								"stop-on-solids": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Турель": {
+							"properties": {
+								"range": 100,
+								"rate-of-fire": 0,
+								"rotate": false,
+								"rotate-speed": 180,
+								"target-mode": "nearest",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": false,
 								"enabled": true
 							}
 						},
@@ -331,7 +344,7 @@
 								"acceleration": 1500,
 								"deceleration": 1500,
 								"jump-strength": 650,
-								"gravity": 1500,
+								"gravity": 0,
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
@@ -341,8 +354,8 @@
 						}
 					},
 					"world": {
-						"x": 181.41585603895874,
-						"y": 566.7910060707493,
+						"x": 240.27873273652017,
+						"y": 564.8289101808307,
 						"width": 12,
 						"height": 12,
 						"originX": 0.5,
@@ -672,8 +685,8 @@
 						}
 					},
 					"world": {
-						"x": 125.12654562367743,
-						"y": 564.0283298136603,
+						"x": 125.71517439065303,
+						"y": 562.8510722797091,
 						"width": 9,
 						"height": 16,
 						"originX": 0.5,

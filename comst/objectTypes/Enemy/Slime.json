@@ -4,7 +4,18 @@
 	"sid": 617302073148163,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "ДвижениеК",
+			"sid": 806117755800165
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Платформер",
+			"sid": 784903159635673
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

@@ -331,6 +331,31 @@
 				}
 			],
 			"sid": 146363116641614
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Slime",
+					"sid": 940929570128129,
+					"behaviorType": "ДвижениеК"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "Slime",
+					"sid": 536524331420405,
+					"behaviorType": "ДвижениеК",
+					"parameters": {
+						"object": "Goffman",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 784160715081853
 		}
 	],
 	"sid": 567197488118894

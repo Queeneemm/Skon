@@ -281,11 +281,11 @@
 				{
 					"id": "apply-impulse-at-angle",
 					"objectClass": "Box",
-					"sid": 543660164160003,
+					"sid": 443948403918205,
 					"behaviorType": "Физика",
 					"parameters": {
-						"impulse": "1",
-						"angle": "270",
+						"impulse": "0.3",
+						"angle": "Tornado.Angle",
 						"image-point": "0"
 					}
 				},

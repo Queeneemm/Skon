@@ -219,20 +219,26 @@
 							"properties": {
 								"immovable": false,
 								"collision-mask": "circle",
-								"prevent-rotation": false,
+								"prevent-rotation": true,
 								"density": 10,
-								"friction": 0,
+								"friction": 1,
 								"elasticity": 0,
 								"linear-damping": 0,
 								"angular-damping": 0,
 								"bullet": false,
 								"enabled": true
 							}
+						},
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
-						"x": 130.86555204197785,
-						"y": 449.86722739236126,
+						"x": 161.11600191680873,
+						"y": 487.2994387482671,
 						"width": 12,
 						"height": 9,
 						"originX": 0.5,

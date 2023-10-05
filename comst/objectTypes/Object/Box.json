@@ -9,6 +9,11 @@
 			"behaviorId": "Physics",
 			"name": "Физика",
 			"sid": 513802374315817
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 877779833617744
 		}
 	],
 	"effectTypes": [],
@@ -25,6 +30,18 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"imageSpriteId": 3858684,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.220486111111111,
+								1,
+								0.21874999999999994,
+								1,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

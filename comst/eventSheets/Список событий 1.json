@@ -237,6 +237,19 @@
 						"image-point": "1",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 184025365155535,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Tornado",
+					"sid": 533143036538981
 				}
 			],
 			"sid": 753913473300445,

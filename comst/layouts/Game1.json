@@ -390,7 +390,7 @@
 					"type": "Fire2",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Анимация 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -457,8 +457,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 219.93253769567372,
-						"y": 548.7927735433398,
+						"x": 368.4803295837644,
+						"y": 535.1414913892302,
 						"width": 46.021916716707835,
 						"height": 10,
 						"originX": 0.5,
@@ -621,7 +621,7 @@
 					"type": "Fire2",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Анимация 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -650,7 +650,7 @@
 					"type": "Fire2",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Анимация 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -679,7 +679,7 @@
 					"type": "Fire2",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Анимация 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -999,64 +999,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Laser",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 523527,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 244.90264248570261,
-						"y": 525.169302069423,
-						"width": 51.744696395637504,
-						"height": 10,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Laser",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 608501,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 270.16852389708197,
-						"y": 550.2281976377152,
-						"width": 46.021916716707835,
-						"height": 10,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},

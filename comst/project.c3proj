@@ -131,8 +131,7 @@
 			"Клавиатура",
 			"Мышь",
 			"t",
-			"Аудио",
-			"КартаТайлов2"
+			"Аудио"
 		],
 		"subfolders": [
 			{
@@ -149,7 +148,6 @@
 					"Spawn",
 					"Chest",
 					"Chest_Open",
-					"Tornado",
 					"Box",
 					"Fire1",
 					"Fire2",
@@ -173,10 +171,19 @@
 					"◸",
 					"◹",
 					"◺",
-					"◿"
+					"◿",
+					"КартаЛазеров"
 				],
 				"subfolders": [],
 				"name": "Lasers"
+			},
+			{
+				"items": [
+					"Tornado",
+					"Portal"
+				],
+				"subfolders": [],
+				"name": "Skills"
 			}
 		]
 	},

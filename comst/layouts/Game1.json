@@ -167,8 +167,8 @@
 						}
 					},
 					"world": {
-						"x": 161.11600191680873,
-						"y": 487.2994387482671,
+						"x": 177.95078465231126,
+						"y": 493.99018573289,
 						"width": 12,
 						"height": 9,
 						"originX": 0.5,
@@ -346,6 +346,47 @@
 						"y": 565.2051913377776,
 						"width": 10,
 						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tornado",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 603474,
+					"instanceVariables": {},
+					"behaviors": {
+						"Пуля": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -12.670084953308105,
+						"y": 807.8405151367188,
+						"width": 12,
+						"height": 13,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

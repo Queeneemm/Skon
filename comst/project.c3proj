@@ -141,7 +141,10 @@
 					"Chest",
 					"Chest_Open",
 					"Tornado",
-					"Box"
+					"Box",
+					"Fire1",
+					"Fire2",
+					"Fire3"
 				],
 				"subfolders": [],
 				"name": "Object"

@@ -29,7 +29,19 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3957543,
+						"imageSpriteId": 1131799,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.49218750000000017,
+								1,
+								0.49531250000000027,
+								1,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

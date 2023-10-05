@@ -50,7 +50,7 @@
 							"height": 216,
 							"max-width": 427,
 							"max-height": 242,
-							"data": "2235x0,1,241x0,2,241x0,2,234x0,14,40,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,42,5x0,2,234x0,3,6x0,2,241x0,2,234x0,1,6x0,2,234x0,15,40,5x0,15,40,229x0,1,3x0,15,41,5x0,15,28,40,228x0,2,3x0,15,41,5x0,15,28,41,227x0,14,28,40,2x0,15,41,5x0,15,28,41,227x0,15,2x28,2x27,28,41,5x0,15,28,41,227x0,15,5x28,41,5x0,15,28,41,227x0,15,6x28,40,4x0,15,28,41,227x0,15,7x28,4x27,2x28,41,227x0,16,29,12x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
+							"data": "541x0,1,241x0,2,241x0,2,241x0,2,241x0,2,241x0,2,241x0,2,241x0,2,241x0,2,241x0,2,234x0,14,40,5x0,2,234x0,15,41,5x0,2,234x0,15,41,5x0,2,234x0,15,42,5x0,2,234x0,3,6x0,2,241x0,2,234x0,1,6x0,2,234x0,15,40,5x0,15,40,229x0,1,3x0,15,41,5x0,15,28,40,228x0,2,3x0,15,41,5x0,15,28,41,227x0,14,28,40,2x0,15,41,5x0,15,28,41,227x0,15,2x28,2x27,28,41,5x0,15,28,41,227x0,15,5x28,41,5x0,15,28,41,227x0,15,6x28,40,4x0,15,28,41,227x0,15,7x28,4x27,2x28,41,227x0,16,29,12x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
 						},
 						"tile-width": 10,
 						"tile-height": 10,
@@ -251,7 +251,7 @@
 								"deceleration": 600,
 								"rotate-speed": 0,
 								"set-angle": false,
-								"stop-on-solids": true,
+								"stop-on-solids": false,
 								"enabled": true
 							}
 						},
@@ -268,24 +268,50 @@
 								"enabled": true
 							}
 						},
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 10,
+								"friction": 1,
+								"elasticity": 0,
+								"linear-damping": 0,
+								"angular-damping": 0,
+								"bullet": false,
+								"enabled": true
+							}
+						},
 						"Платформер": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
+								"max-speed": 50,
+								"acceleration": 30,
 								"deceleration": 1500,
 								"jump-strength": 650,
-								"gravity": 1000,
+								"gravity": 1500,
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"allow-sliding": false,
+								"default-controls": false,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 240.27873273652017,
-						"y": 564.8289101808307,
+						"x": 238.9814792555822,
+						"y": 565.6396936064169,
 						"width": 12,
 						"height": 12,
 						"originX": 0.5,
@@ -362,7 +388,7 @@
 					"type": "Tornado",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Tornado_roll",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -385,7 +411,7 @@
 					"world": {
 						"x": -12.670084953308105,
 						"y": 807.8405151367188,
-						"width": 12,
+						"width": 10,
 						"height": 13,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -450,6 +476,87 @@
 						"y": 516.0458648691572,
 						"width": 10,
 						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Spawn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 878627,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 77.075010864434,
+						"y": 563.2017856134098,
+						"width": 30,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Slime_bul",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 799011,
+					"instanceVariables": {},
+					"behaviors": {
+						"Пуля": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"ДвижениеК": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": -8.99615502045815,
+						"y": 682.6280176670724,
+						"width": 2.121757990394735,
+						"height": 2.121757990394735,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -744,8 +851,8 @@
 						}
 					},
 					"world": {
-						"x": 125.71517439065303,
-						"y": 562.8510722797091,
+						"x": 96.85128443978272,
+						"y": 563.8240123904127,
 						"width": 9,
 						"height": 16,
 						"originX": 0.5,

@@ -256,11 +256,11 @@
 				],
 				"sid": 173043193897896,
 				"name": "Tornado_roll",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 25
 			}
 		],
 		"subfolders": []

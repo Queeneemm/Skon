@@ -416,9 +416,115 @@
 								"image-point": "2",
 								"mode": "direct"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Slime",
+							"sid": 884724753862199,
+							"parameters": {
+								"animation": "\"Slime_Jump\"",
+								"from": "beginning"
+							}
 						}
 					],
-					"sid": 932778561778777
+					"sid": 932778561778777,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 778318716277890,
+									"parameters": {
+										"interval-seconds": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Slime",
+									"sid": 268475340373530,
+									"parameters": {
+										"object": "Slime_bul",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Slime_bul",
+									"sid": 315595027154822,
+									"behaviorType": "ДвижениеК",
+									"parameters": {
+										"object": "Goffman",
+										"image-point": "0",
+										"mode": "direct"
+									}
+								}
+							],
+							"sid": 815636413848091
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-hit-solid",
+									"objectClass": "Slime_bul",
+									"sid": 929440106234386,
+									"behaviorType": "ДвижениеК"
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Slime_bul",
+									"sid": 434313055039000
+								}
+							],
+							"sid": 208553447528407
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Slime_bul",
+							"sid": 785644977900645,
+							"parameters": {
+								"object": "Goffman"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Goffman",
+							"sid": 343830526720878
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Slime_bul",
+							"sid": 962171958378705
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 587084873124093,
+							"parameters": {
+								"audio-file": "death",
+								"loop": "not-looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 244267756790529
 				}
 			]
 		},
@@ -488,6 +594,77 @@
 				}
 			],
 			"sid": 244228432185138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Tornado",
+					"sid": 847781958624811,
+					"parameters": {
+						"object": "Slime"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Tornado",
+					"sid": 750999282862082
+				}
+			],
+			"sid": 348354075733203,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "Goffman",
+							"sid": 395471980989652
+						}
+					],
+					"actions": [
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Slime",
+							"sid": 877750661832389,
+							"behaviorType": "Физика",
+							"parameters": {
+								"impulse": "30",
+								"angle": "180",
+								"image-point": "0"
+							}
+						}
+					],
+					"sid": 142051035305655
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 443809551764570
+						}
+					],
+					"actions": [
+						{
+							"id": "apply-impulse-at-angle",
+							"objectClass": "Slime",
+							"sid": 622845229801033,
+							"behaviorType": "Физика",
+							"parameters": {
+								"impulse": "30",
+								"angle": "0",
+								"image-point": "0"
+							}
+						}
+					],
+					"sid": 775750125670554
+				}
+			]
 		}
 	],
 	"sid": 567197488118894

@@ -159,7 +159,8 @@
 			},
 			{
 				"items": [
-					"Slime"
+					"Slime",
+					"Slime_bul"
 				],
 				"subfolders": [],
 				"name": "Enemy"

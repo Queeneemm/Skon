@@ -464,11 +464,11 @@
 				{
 					"id": "play",
 					"objectClass": "Аудио",
-					"sid": 161574240228791,
+					"sid": 256728544172174,
 					"parameters": {
 						"audio-file": "death",
 						"loop": "not-looping",
-						"volume": "0",
+						"volume": "-20",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}

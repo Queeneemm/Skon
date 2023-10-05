@@ -163,7 +163,7 @@
 				],
 				"sid": 981817789763698,
 				"name": "Анимация 1",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

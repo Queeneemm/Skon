@@ -249,6 +249,87 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 9,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7648395,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.125,
+								0.6666666666666666,
+								0.125,
+								0.8888888888888888,
+								0.1875,
+								0.8888888888888888,
+								0.375,
+								0.6666666666666666,
+								0.875,
+								0.5555555555555556,
+								0.875,
+								0.3333333333333333,
+								0.8125,
+								0.1111111111111111,
+								0.375,
+								0.1111111111111111,
+								0.25
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 9,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6552397,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.125,
+								0.6666666666666666,
+								0.125,
+								0.8888888888888888,
+								0.25,
+								0.8888888888888888,
+								0.375,
+								0.6666666666666666,
+								0.8125,
+								0.4444444444444444,
+								0.875,
+								0.3333333333333333,
+								0.875,
+								0.1111111111111111,
+								0.375,
+								0.1111111111111111,
+								0.1875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 589082294301721,
+				"name": "Gof_Up",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

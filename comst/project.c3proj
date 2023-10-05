@@ -131,6 +131,13 @@
 				],
 				"subfolders": [],
 				"name": "Object"
+			},
+			{
+				"items": [
+					"Slime"
+				],
+				"subfolders": [],
+				"name": "Enemy"
 			}
 		]
 	},

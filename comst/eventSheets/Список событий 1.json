@@ -442,6 +442,52 @@
 				}
 			],
 			"sid": 666661589539999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Goffman",
+					"sid": 731440894469595,
+					"parameters": {
+						"object": "Slime"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Goffman",
+					"sid": 784730567709498
+				},
+				{
+					"id": "play",
+					"objectClass": "Аудио",
+					"sid": 161574240228791,
+					"parameters": {
+						"audio-file": "death",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 686136201837293,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 182426219311223
+				}
+			],
+			"sid": 244228432185138
 		}
 	],
 	"sid": 567197488118894

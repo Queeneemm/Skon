@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Аудио",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Клавиатура",
 			"author": "Scirra",
@@ -123,7 +130,8 @@
 			"Stair",
 			"Клавиатура",
 			"Мышь",
-			"t"
+			"t",
+			"Аудио"
 		],
 		"subfolders": [
 			{
@@ -184,7 +192,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "death.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 173721329754829,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

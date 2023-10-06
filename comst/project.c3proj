@@ -182,7 +182,8 @@
 					"КартаЛазеров",
 					"◸",
 					"EmmR",
-					"RecR"
+					"RecR",
+					"LaserDEF"
 				],
 				"subfolders": [],
 				"name": "Lasers"

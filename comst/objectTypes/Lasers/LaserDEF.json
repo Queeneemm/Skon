@@ -1,7 +1,7 @@
 {
-	"name": "Laser",
+	"name": "LaserDEF",
 	"plugin-id": "Sprite",
-	"sid": 743650095418283,
+	"sid": 885866464515265,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,33 +11,21 @@
 			{
 				"frames": [
 					{
-						"width": 12,
-						"height": 4,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
-						"originY": 0.25,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9913610,
-						"collisionPoly": {
-							"points": [
-								0.08333333333333333,
-								0,
-								0.9166666666666666,
-								0,
-								0.9166666666666666,
-								1,
-								0.08333333333333333,
-								1
-							]
-						},
+						"imageSpriteId": 1084253,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 841296834638860,
-				"name": "Default",
+				"sid": 331793248443182,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

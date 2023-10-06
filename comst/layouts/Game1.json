@@ -86,10 +86,25 @@
 					},
 					"uid": 811891,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						}
+					},
 					"world": {
-						"x": 142.93942996536856,
-						"y": 524.4547539871969,
+						"x": 131.2025382188612,
+						"y": 524.7039993984326,
 						"width": 10,
 						"height": 11,
 						"originX": 0.5,
@@ -380,7 +395,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 134.74247028371923,
+						"x": 51.86650265834122,
 						"y": 564.7377310883536,
 						"width": 10,
 						"height": 11,
@@ -688,8 +703,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 110.31427774194856,
-						"y": 563.6767731643118,
+						"x": 152.1069201972178,
+						"y": 576.0379772708,
 						"width": 11,
 						"height": 13,
 						"originX": 0.5,

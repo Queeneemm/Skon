@@ -926,6 +926,33 @@
 				}
 			],
 			"sid": 437467848339687
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 708217560653384,
+					"parameters": {
+						"first-value": "Icepeak.X",
+						"comparison": 0,
+						"second-value": "Goffman.X"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Icepeak",
+					"sid": 847444978795699,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 842298476657936
 		}
 	],
 	"sid": 567197488118894

@@ -1,0 +1,189 @@
+{
+	"name": "Block_J",
+	"plugin-id": "Sprite",
+	"sid": 196389685013149,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9570972,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 488249051868394,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5053808,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								0.7,
+								0,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.7,
+								0.4,
+								0.7,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1973871,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								0.7,
+								0,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.7,
+								0.4,
+								0.7,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2461727,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								0.7,
+								0,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.7,
+								0.4,
+								0.7,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3046812,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								0.7,
+								0,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.7,
+								0.4,
+								0.7,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 851942200745846,
+				"name": "Block_j_Roll",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

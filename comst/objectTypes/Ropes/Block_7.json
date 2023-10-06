@@ -1,0 +1,197 @@
+{
+	"name": "Block_7",
+	"plugin-id": "Sprite",
+	"sid": 204679634363790,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8335328,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 703047671022126,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1658536,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0.2,
+								0.7,
+								0.2,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.9,
+								0.6,
+								1,
+								0.5,
+								1,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 895599,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0.2,
+								0.7,
+								0.2,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.9,
+								0.6,
+								1,
+								0.5,
+								1,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6487024,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0.2,
+								0.7,
+								0.2,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.9,
+								0.6,
+								1,
+								0.5,
+								1,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9056123,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0.2,
+								0.7,
+								0.2,
+								0.8,
+								0.3,
+								0.8,
+								0.6,
+								0.7,
+								0.9,
+								0.6,
+								1,
+								0.5,
+								1,
+								0,
+								0.5,
+								0,
+								0.4,
+								0.1,
+								0.3
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 314275586990732,
+				"name": "Block_7_Roll",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

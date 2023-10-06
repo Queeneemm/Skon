@@ -92,6 +92,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Прикрепить",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Платформер",
 			"author": "Scirra",
@@ -204,6 +211,23 @@
 				],
 				"subfolders": [],
 				"name": "Skills"
+			},
+			{
+				"items": [
+					"StoneBall",
+					"RopeVer",
+					"RopeHor",
+					"BoxUH",
+					"BoxRH",
+					"BoxLH",
+					"Block_Г",
+					"Block_T",
+					"Block_L",
+					"Block_J",
+					"Block_7"
+				],
+				"subfolders": [],
+				"name": "Ropes"
 			}
 		]
 	},

@@ -1,16 +1,10 @@
 {
-	"name": "Lantern",
+	"name": "RopeVer",
 	"plugin-id": "Sprite",
-	"sid": 224389294546917,
+	"sid": 955159864381672,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Pin",
-			"name": "Прикрепить",
-			"sid": 711485714377891
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,13 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3948890,
+						"imageSpriteId": 918705,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 818328801206015,
+				"sid": 769735332661911,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

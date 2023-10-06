@@ -626,41 +626,7 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 812796062190450,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Слой 2",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
+				},
 				{
 					"type": "КартаЛазеров",
 					"properties": {
@@ -706,6 +672,185 @@
 							1,
 							1
 						],
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PortalIn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Portal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 319277,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 110.31427774194856,
+						"y": 563.6767731643118,
+						"width": 11,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PortalOut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Portal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 577600,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 134.19552609442448,
+						"y": 493.50718701129364,
+						"width": 11,
+						"height": 13,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 812796062190450,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Слой 2",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Laser",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 839407,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 245.13132705399963,
+						"y": 525.1824392403765,
+						"width": 61.74323419935762,
+						"height": 4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Laser",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 668338,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 219.8892292703151,
+						"y": 547.653693154278,
+						"width": 56.49436078302784,
+						"height": 4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Laser",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 276440,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 269.94173351481714,
+						"y": 548.8381220744858,
+						"width": 58.6162457811186,
+						"height": 4.147415168288376,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -1061,7 +1206,7 @@
 					}
 				},
 				{
-					"type": "◸",
+					"type": "◹",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Default",
@@ -1069,12 +1214,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 448790,
+					"uid": 956344,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 219.72298915574495,
-						"y": 525.0559767424528,
+						"x": 269.86804492913996,
+						"y": 525.1824362909719,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,
@@ -1090,51 +1235,22 @@
 					}
 				},
 				{
-					"type": "Portal",
+					"type": "◸",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Portal",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 584227,
+					"uid": 448790,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 133.47559027763086,
-						"y": 493.39637371048593,
-						"width": 11,
-						"height": 13,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Portal",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Portal",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 288739,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 113.32893563575068,
-						"y": 563.6296411732656,
-						"width": 11,
-						"height": 13,
+						"x": 219.89491481564843,
+						"y": 525.1705938490552,
+						"width": 10,
+						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

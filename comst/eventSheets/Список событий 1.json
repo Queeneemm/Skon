@@ -665,6 +665,31 @@
 					"sid": 775750125670554
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PortalIn",
+					"sid": 678184252866981,
+					"parameters": {
+						"object": "Goffman"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Goffman",
+					"sid": 272033098142488,
+					"parameters": {
+						"x": "PortalOut.X",
+						"y": "PortalOut.Y"
+					}
+				}
+			],
+			"sid": 830762685546786
 		}
 	],
 	"sid": 567197488118894

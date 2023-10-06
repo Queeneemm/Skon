@@ -180,7 +180,8 @@
 			{
 				"items": [
 					"Tornado",
-					"Portal"
+					"PortalIn",
+					"PortalOut"
 				],
 				"subfolders": [],
 				"name": "Skills"

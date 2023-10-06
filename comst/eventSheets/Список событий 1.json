@@ -687,9 +687,114 @@
 						"x": "PortalOut.X",
 						"y": "PortalOut.Y"
 					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 111860453244170,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 518730225415052,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 795636095550373,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 156095257934052,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 849867408672582,
+					"parameters": {
+						"collisions": "enabled"
+					}
 				}
 			],
 			"sid": 830762685546786
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PortalOut",
+					"sid": 543981518038848,
+					"parameters": {
+						"object": "Goffman"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Goffman",
+					"sid": 643985950159465,
+					"parameters": {
+						"x": "PortalIn.X",
+						"y": "PortalIn.Y"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 881446252274474,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 918129487273443,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 536856274611485,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 401473909402046,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 658418805499227,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 500778227064858
 		}
 	],
 	"sid": 567197488118894

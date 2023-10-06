@@ -7,6 +7,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "BackGround",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 497420,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 167.5830531493474,
+						"y": 504.87810653751717,
+						"width": 454.6547389352363,
+						"height": 255.7432906510704,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Light",
 					"properties": {
 						"initially-visible": true,

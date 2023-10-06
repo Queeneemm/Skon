@@ -148,7 +148,6 @@
 			"Частицы",
 			"Частицы2",
 			"Частицы3",
-			"Stair",
 			"Клавиатура",
 			"Мышь",
 			"t",
@@ -176,7 +175,8 @@
 					"Fire3",
 					"Kust",
 					"Icepeak_cut",
-					"Lantern"
+					"Lantern",
+					"Stair"
 				],
 				"subfolders": [],
 				"name": "Object"
@@ -198,8 +198,7 @@
 					"КартаЛазеров",
 					"◸",
 					"EmmR",
-					"RecR",
-					"LaserDEF"
+					"RecR"
 				],
 				"subfolders": [],
 				"name": "Lasers"

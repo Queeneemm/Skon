@@ -729,7 +729,8 @@
 					}
 				}
 			],
-			"sid": 830762685546786
+			"sid": 830762685546786,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -795,6 +796,136 @@
 				}
 			],
 			"sid": 500778227064858
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PortalIn",
+					"sid": 836433092198417,
+					"parameters": {
+						"object": "Box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Box",
+					"sid": 347799936663633,
+					"parameters": {
+						"x": "PortalOut.X-10",
+						"y": "PortalOut.Y"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 877335065257040,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 816962114440942,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 673897732151180,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 522952651647496,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 523477762159402,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 822553077596222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PortalOut",
+					"sid": 410101076504889,
+					"parameters": {
+						"object": "Box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Box",
+					"sid": 912807345585285,
+					"parameters": {
+						"x": "PortalIn.X+10",
+						"y": "PortalIn.Y"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 154566201384139,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 675270720499377,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 252307478109936,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalOut",
+					"sid": 472200425814021,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "PortalIn",
+					"sid": 576965552412426,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 437467848339687
 		}
 	],
 	"sid": 567197488118894

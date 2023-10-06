@@ -953,6 +953,33 @@
 				}
 			],
 			"sid": 842298476657936
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Icepeak",
+					"sid": 121294503747628,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Goffman",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Icepeak",
+					"sid": 805004075140527,
+					"behaviorType": "Физика",
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 922804623581696
 		}
 	],
 	"sid": 567197488118894

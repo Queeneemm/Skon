@@ -1,7 +1,7 @@
 {
-	"name": "Icepeak_cut",
+	"name": "RecR",
 	"plugin-id": "Sprite",
-	"sid": 740166978540907,
+	"sid": 949201718002376,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -12,19 +12,19 @@
 				"frames": [
 					{
 						"width": 10,
-						"height": 11,
-						"originX": 0.4,
-						"originY": 0.2727272727272727,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7202745,
+						"imageSpriteId": 1817106,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 159087193170459,
+				"sid": 290687767765526,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

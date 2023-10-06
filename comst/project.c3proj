@@ -145,7 +145,6 @@
 			{
 				"items": [
 					"Icepeak",
-					"Icepeak_cut",
 					"IronDoor_up",
 					"IronDoor_bot",
 					"Lava_ball",
@@ -160,7 +159,8 @@
 					"Fire1",
 					"Fire2",
 					"Fire3",
-					"Kust"
+					"Kust",
+					"Icepeak_cut"
 				],
 				"subfolders": [],
 				"name": "Object"
@@ -180,7 +180,9 @@
 					"◺",
 					"◿",
 					"КартаЛазеров",
-					"◸"
+					"◸",
+					"EmmR",
+					"RecR"
 				],
 				"subfolders": [],
 				"name": "Lasers"

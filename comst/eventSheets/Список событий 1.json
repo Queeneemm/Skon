@@ -931,33 +931,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-two-values",
-					"objectClass": "System",
-					"sid": 708217560653384,
-					"parameters": {
-						"first-value": "Icepeak.X",
-						"comparison": 0,
-						"second-value": "Goffman.X"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "Icepeak",
-					"sid": 847444978795699,
-					"behaviorType": "Физика",
-					"parameters": {
-						"mode": "enabled"
-					}
-				}
-			],
-			"sid": 842298476657936
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "has-los-to-object",
 					"objectClass": "Icepeak",
 					"sid": 121294503747628,
@@ -979,7 +952,38 @@
 					}
 				}
 			],
-			"sid": 922804623581696
+			"sid": 922804623581696,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Icepeak",
+							"sid": 858001074890405,
+							"parameters": {
+								"object": "Goffman"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Goffman",
+							"sid": 794845864325353
+						}
+					],
+					"sid": 830816702389833,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 545308502514695
+						}
+					]
+				}
+			]
 		}
 	],
 	"sid": 567197488118894

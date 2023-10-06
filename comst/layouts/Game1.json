@@ -717,8 +717,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 134.19552609442448,
-						"y": 493.50718701129364,
+						"x": 133.80310691644073,
+						"y": 493.3109774223018,
 						"width": 11,
 						"height": 13,
 						"originX": 0.5,
@@ -1243,12 +1243,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 448790,
+					"uid": 113164,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 219.89491481564843,
-						"y": 525.1705938490552,
+						"x": 219.91513592545897,
+						"y": 525.1454519344509,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,

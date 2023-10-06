@@ -71,6 +71,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Поле зрения",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Движение К",
 			"author": "Scirra",

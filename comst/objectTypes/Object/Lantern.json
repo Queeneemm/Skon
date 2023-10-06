@@ -1,7 +1,7 @@
 {
-	"name": "EmmR",
+	"name": "Lantern",
 	"plugin-id": "Sprite",
-	"sid": 322164678685183,
+	"sid": 224389294546917,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,13 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3272337,
+						"imageSpriteId": 3948890,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 703768089351861,
+				"sid": 818328801206015,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

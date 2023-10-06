@@ -1,31 +1,37 @@
 {
-	"name": "EmmR",
+	"name": "Light",
 	"plugin-id": "Sprite",
-	"sid": 322164678685183,
+	"sid": 356155497222671,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Синусоид",
+			"sid": 499654842409098
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 10,
-						"height": 10,
+						"width": 34,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3272337,
+						"imageSpriteId": 3513338,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 703768089351861,
-				"name": "Default",
+				"sid": 596541684602952,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

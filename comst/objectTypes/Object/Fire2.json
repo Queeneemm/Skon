@@ -4,7 +4,13 @@
 	"sid": 739326589987585,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 634066111363414
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -46,18 +52,14 @@
 						"imageSpriteId": 5123731,
 						"collisionPoly": {
 							"points": [
-								0.2,
-								0,
-								0.8,
-								0,
 								1,
-								0.6,
+								0.49843750000000125,
 								1,
 								1,
 								0,
 								1,
 								0,
-								0.3
+								0.4999999999999998
 							]
 						},
 						"useCollisionPoly": true,
@@ -75,18 +77,14 @@
 						"imageSpriteId": 8203692,
 						"collisionPoly": {
 							"points": [
-								0.6,
-								0,
-								0.7,
-								0,
 								1,
-								0.6,
+								0.49843749999999887,
 								1,
 								1,
 								0,
 								1,
 								0,
-								0.2
+								0.5015624999999991
 							]
 						},
 						"useCollisionPoly": true,
@@ -104,20 +102,14 @@
 						"imageSpriteId": 7157224,
 						"collisionPoly": {
 							"points": [
-								0.6,
-								0,
-								0.7,
-								0,
-								0.9,
-								0.3,
 								1,
-								0.6,
+								0.4968749999999992,
 								1,
 								1,
 								0,
 								1,
 								0,
-								0.1
+								0.49999999999999944
 							]
 						},
 						"useCollisionPoly": true,

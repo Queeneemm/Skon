@@ -98,7 +98,7 @@
 							"height": 216,
 							"max-width": 427,
 							"max-height": 242,
-							"data": "534x0,1,6x0,1,234x0,15,40,5x0,2,234x0,15,41,5x0,2,234x0,16,42,5x0,15,40,240x0,15,28,40,239x0,15,2x28,4x31,3x27,40,231x0,15,28,41,4x0,15,2x28,41,231x0,15,28,41,4x0,15,2x28,41,224x0,14,40,5x0,15,2x28,27,40,2x0,15,2x28,41,224x0,15,41,5x0,16,29,2x28,41,2x0,16,2x28,41,224x0,15,41,7x0,15,28,41,3x0,16,2x28,40,223x0,15,41,7x0,15,28,41,4x0,16,28,41,223x0,15,41,7x0,15,28,41,5x0,15,41,223x0,15,42,7x0,15,28,41,5x0,15,41,223x0,3,6x0,14,27,2x28,41,5x0,15,41,230x0,15,3x28,41,5x0,15,41,223x0,1,6x0,15,4x28,5x27,28,42,223x0,15,40,5x0,15,2x28,7x29,42,220x0,1,3x0,15,41,5x0,15,28,41,228x0,2,3x0,15,41,5x0,15,28,41,227x0,14,28,40,2x0,15,41,5x0,15,28,41,227x0,15,2x28,2x27,28,41,5x0,15,28,41,227x0,15,5x28,41,5x0,15,28,41,227x0,15,6x28,40,4x0,15,28,41,227x0,15,7x28,4x27,2x28,41,227x0,16,29,12x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
+							"data": "534x0,1,6x0,1,234x0,15,40,5x0,2,234x0,15,41,5x0,2,234x0,16,42,5x0,15,40,240x0,15,28,40,239x0,15,2x28,27,3x31,3x27,40,231x0,15,2x28,41,3x0,15,2x28,41,231x0,15,2x28,41,3x0,15,2x28,41,224x0,14,40,5x0,15,3x28,40,2x0,15,2x28,41,224x0,15,41,5x0,16,29,2x28,41,2x0,16,2x28,41,224x0,15,41,7x0,15,28,41,3x0,16,28,41,224x0,15,41,7x0,15,28,41,4x0,16,41,224x0,15,41,7x0,15,28,41,5x0,2,224x0,15,42,7x0,15,28,41,5x0,2,224x0,3,6x0,14,27,2x28,41,5x0,2,231x0,15,3x28,41,5x0,2,224x0,1,6x0,15,4x28,4x27,31,42,224x0,15,40,5x0,15,2x28,5x29,42,222x0,1,3x0,15,41,5x0,15,28,41,228x0,2,3x0,15,41,5x0,15,28,41,227x0,14,28,40,2x0,15,41,5x0,15,28,41,227x0,15,2x28,2x27,28,41,5x0,15,28,41,227x0,15,5x28,41,5x0,15,28,41,227x0,15,6x28,40,4x0,15,28,41,227x0,15,7x28,4x27,2x28,41,227x0,16,29,12x28,41,228x0,12,16,29,10x28,42,231x0,16,8x29,42,716x0,11,241x0,11,236x0,12,23,0,2x23,2177x0,22,92879x0"
 						},
 						"tile-width": 10,
 						"tile-height": 10,
@@ -108,8 +108,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 25.868272212688325,
-						"y": 1.145863999712617,
+						"x": 24.918618,
+						"y": 0.19621,
 						"width": 3840,
 						"height": 2160,
 						"originX": 0,
@@ -120,58 +120,6 @@
 							1,
 							1
 						],
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Icepeak",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 811891,
-					"instanceVariables": {},
-					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "custom",
-								"range": 80,
-								"cone-of-view": 180,
-								"use-collision-cells": true
-							}
-						}
-					},
-					"world": {
-						"x": 131.47119098407785,
-						"y": 522.095575701503,
-						"width": 9,
-						"height": 10,
-						"originX": 0.4444444444444444,
-						"originY": 0.3,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -354,10 +302,10 @@
 					"world": {
 						"x": 238.9814792555822,
 						"y": 565.6396936064169,
-						"width": 12,
-						"height": 12,
+						"width": 10,
+						"height": 9,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.4444444444444444,
 						"color": [
 							1,
 							1,
@@ -420,7 +368,14 @@
 					},
 					"uid": 956781,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 179.853471719328,
 						"y": 585.2271932563842,
@@ -486,6 +441,227 @@
 						"height": 11,
 						"originX": 0.4,
 						"originY": 0.2727272727272727,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Lantern",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 707702,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 74.55918460787943,
+						"y": 525.1581619029675,
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Light",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 152323,
+					"instanceVariables": {},
+					"behaviors": {
+						"Синусоид": {
+							"properties": {
+								"movement": "opacity",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 15,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 74.69466076849089,
+						"y": 526.6382790939182,
+						"width": 34,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Light",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 607731,
+					"instanceVariables": {},
+					"behaviors": {
+						"Синусоид": {
+							"properties": {
+								"movement": "opacity",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 15,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 164.6712044161841,
+						"y": 586.6422379678053,
+						"width": 41.71919426673861,
+						"height": 31.105302149972886,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Icepeak",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 433148,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 80,
+								"cone-of-view": 180,
+								"use-collision-cells": true
+							}
+						}
+					},
+					"world": {
+						"x": 155.4780122153402,
+						"y": 522.1195845482699,
+						"width": 9,
+						"height": 10,
+						"originX": 0.4444444444444444,
+						"originY": 0.3,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Icepeak",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 994835,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 80,
+								"cone-of-view": 180,
+								"use-collision-cells": true
+							}
+						}
+					},
+					"world": {
+						"x": 156.60374884786435,
+						"y": 622.3085987366109,
+						"width": 9,
+						"height": 10,
+						"originX": 0.4444444444444444,
+						"originY": 0.3,
 						"color": [
 							1,
 							1,
@@ -572,8 +748,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 77.075010864434,
-						"y": 563.2017856134098,
+						"x": 115.34934910367973,
+						"y": 562.5585194245149,
 						"width": 30,
 						"height": 15,
 						"originX": 0.5,
@@ -602,7 +778,7 @@
 					"behaviors": {
 						"Пуля": {
 							"properties": {
-								"speed": 400,
+								"speed": 10,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -651,7 +827,14 @@
 					},
 					"uid": 841235,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 169.86962219171565,
 						"y": 585.2328978475101,
@@ -680,7 +863,14 @@
 					},
 					"uid": 320522,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 149.8851011411608,
 						"y": 585.2338766677558,
@@ -709,7 +899,14 @@
 					},
 					"uid": 580470,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 159.89975212772856,
 						"y": 585.2338766677558,
@@ -788,7 +985,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 137.62469043372755,
+						"x": 129.55262794260182,
 						"y": 635.6287915435223,
 						"width": 11,
 						"height": 13,

@@ -99,6 +99,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Синусоид",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Turret",
 			"name": "Турель",
 			"author": "Scirra",
@@ -139,7 +146,8 @@
 			"Мышь",
 			"t",
 			"Аудио",
-			"КартаФона"
+			"КартаФона",
+			"Light"
 		],
 		"subfolders": [
 			{
@@ -160,7 +168,8 @@
 					"Fire2",
 					"Fire3",
 					"Kust",
-					"Icepeak_cut"
+					"Icepeak_cut",
+					"Lantern"
 				],
 				"subfolders": [],
 				"name": "Object"

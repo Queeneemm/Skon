@@ -420,9 +420,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Slime",
-							"sid": 884724753862199,
+							"sid": 567991064571947,
 							"parameters": {
-								"animation": "\"Slime_Jump\"",
+								"animation": "\"Slime_polz\"",
 								"from": "beginning"
 							}
 						}
@@ -968,6 +968,28 @@
 					],
 					"actions": [
 						{
+							"id": "set-animation",
+							"objectClass": "Goffman",
+							"sid": 246201032130025,
+							"parameters": {
+								"animation": "\"IceDead\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Icepeak",
+							"sid": 932485462913166
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 617313552802229,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "Goffman",
 							"sid": 794845864325353
@@ -976,6 +998,118 @@
 					"sid": 830816702389833
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Fire2",
+					"sid": 993152651426627,
+					"parameters": {
+						"object": "Goffman"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 350339198443079,
+					"parameters": {
+						"animation": "\"Fired\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 587410668442088,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Goffman",
+					"sid": 875626355380237
+				}
+			],
+			"sid": 657874051244225
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Fire2",
+					"sid": 651260728377406,
+					"parameters": {
+						"object": "Slime"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Slime",
+					"sid": 846567685656590,
+					"behaviorType": "Турель",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Slime",
+					"sid": 924304127497174,
+					"behaviorType": "ДвижениеК"
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Slime",
+					"sid": 567238558350123,
+					"parameters": {
+						"animation": "\"SlimeFired\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 872394892888560,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Slime",
+					"sid": 497538785471020
+				}
+			],
+			"sid": 565850683763494
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Fire2",
+					"sid": 409006421639848,
+					"parameters": {
+						"object": "Icepeak"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Icepeak",
+					"sid": 765308933631683
+				}
+			],
+			"sid": 419028130911009
 		}
 	],
 	"sid": 567197488118894

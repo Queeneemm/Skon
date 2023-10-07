@@ -153,8 +153,7 @@
 			"t",
 			"Аудио",
 			"КартаФона",
-			"Light",
-			"BackGround"
+			"Light"
 		],
 		"subfolders": [
 			{
@@ -231,7 +230,10 @@
 				"name": "Ropes"
 			},
 			{
-				"items": [],
+				"items": [
+					"BackGround",
+					"CaveBack"
+				],
 				"subfolders": [
 					{
 						"items": [

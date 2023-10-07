@@ -354,46 +354,6 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "механика платформ"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Goffman",
-					"sid": 609492971479124,
-					"parameters": {
-						"object": "Platform"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-enabled",
-					"objectClass": "Platform",
-					"sid": 201596941283988,
-					"behaviorType": "Физика",
-					"parameters": {
-						"mode": "enabled"
-					}
-				},
-				{
-					"id": "apply-force-at-angle",
-					"objectClass": "Platform",
-					"sid": 320894590445653,
-					"behaviorType": "Физика",
-					"parameters": {
-						"force": "1",
-						"angle": "90",
-						"image-point": "0"
-					}
-				}
-			],
-			"sid": 146363116641614
-		},
-		{
-			"eventType": "comment",
 			"text": "механика слайма и его снаряда"
 		},
 		{

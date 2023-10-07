@@ -1760,6 +1760,46 @@
 				}
 			],
 			"sid": 200892645376942
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 342864828277472,
+					"parameters": {
+						"key": 70
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Chest",
+					"sid": 621432839377004,
+					"parameters": {
+						"object": "Goffman"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Chest",
+					"sid": 340748964022800,
+					"parameters": {
+						"object": "Chest_Open",
+						"layer": "2",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Chest",
+					"sid": 322183462049644
+				}
+			],
+			"sid": 683175639883685
 		}
 	],
 	"sid": 567197488118894

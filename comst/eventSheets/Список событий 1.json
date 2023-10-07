@@ -923,6 +923,49 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Icepeak",
+					"sid": 695541574172743,
+					"parameters": {
+						"object": "Goffman"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 783759734077397,
+					"parameters": {
+						"animation": "\"IceDead\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Icepeak",
+					"sid": 700553514450874
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 270203683588860,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Goffman",
+					"sid": 709186591973312
+				}
+			],
+			"sid": 858838353858696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "has-los-to-object",
 					"objectClass": "Icepeak",
 					"sid": 121294503747628,
@@ -950,44 +993,29 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
+							"id": "is-enabled",
 							"objectClass": "Icepeak",
-							"sid": 858001074890405,
-							"parameters": {
-								"object": "Goffman"
-							}
+							"sid": 343910111712412,
+							"behaviorType": "Физика"
 						}
 					],
 					"actions": [
 						{
-							"id": "set-animation",
-							"objectClass": "Goffman",
-							"sid": 246201032130025,
-							"parameters": {
-								"animation": "\"IceDead\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Icepeak",
-							"sid": 932485462913166
-						},
-						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 617313552802229,
+							"sid": 583572935060481,
 							"parameters": {
-								"seconds": "1.5"
+								"seconds": "2"
 							}
 						},
 						{
-							"id": "destroy",
-							"objectClass": "Goffman",
-							"sid": 794845864325353
+							"id": "start-fade",
+							"objectClass": "Icepeak",
+							"sid": 155134534659031,
+							"behaviorType": "Угасание"
 						}
 					],
-					"sid": 830816702389833
+					"sid": 206755408802006
 				}
 			]
 		},

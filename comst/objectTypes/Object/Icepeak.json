@@ -14,6 +14,11 @@
 			"behaviorId": "LOS",
 			"name": "ПолеЗрения",
 			"sid": 361327664161885
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Угасание",
+			"sid": 595008822865647
 		}
 	],
 	"effectTypes": [],
@@ -25,20 +30,20 @@
 						"width": 10,
 						"height": 9,
 						"originX": 0.3,
-						"originY": 0.5555555555555556,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6261995,
+						"imageSpriteId": 9652915,
 						"collisionPoly": {
 							"points": [
-								0.09843749999999991,
+								0,
 								1,
-								0.09843749999999994,
 								0,
-								0.41249999999999953,
 								0,
-								0.4218750000000003,
+								0.4038651315789472,
+								0,
+								0.4095394736842109,
 								1
 							]
 						},

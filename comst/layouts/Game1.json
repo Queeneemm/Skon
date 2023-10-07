@@ -2338,15 +2338,25 @@
 								"cone-of-view": 15,
 								"use-collision-cells": true
 							}
+						},
+						"Угасание": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
 						}
 					},
 					"world": {
-						"x": 69.47979791954589,
-						"y": 522.4764772326289,
+						"x": 71.6317558495133,
+						"y": 522.2808446935409,
 						"width": 10,
 						"height": 9,
 						"originX": 0.3,
-						"originY": 0.5555555555555556,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -2370,8 +2380,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 59.04075624115768,
-						"y": 523.3228444201325,
+						"x": 71.16997366461038,
+						"y": 522.3446817246927,
 						"width": 10,
 						"height": 10.638594467757002,
 						"originX": 0.4,
@@ -2883,35 +2893,6 @@
 					}
 				},
 				{
-					"type": "Lever_On2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 584125,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -19.504039465498494,
-						"y": 603.4199032913173,
-						"width": 10,
-						"height": 11,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Lever_Off2",
 					"properties": {
 						"initially-visible": true,
@@ -2937,6 +2918,188 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Icepeak_cut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 411310,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 142.13052446949908,
+						"y": 522.134059315112,
+						"width": 10,
+						"height": 10.638594467757002,
+						"originX": 0.4,
+						"originY": 0.2727272727272727,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Icepeak",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 229790,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 80,
+								"cone-of-view": 15,
+								"use-collision-cells": true
+							}
+						},
+						"Угасание": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 142.58686392878812,
+						"y": 522.1340993834843,
+						"width": 10,
+						"height": 9,
+						"originX": 0.3,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Icepeak_cut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 137349,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 145.65576827692706,
+						"y": 612.8461016004683,
+						"width": 10,
+						"height": 10.638594467757002,
+						"originX": 0.4,
+						"originY": 0.2727272727272727,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Icepeak",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 256985,
+					"instanceVariables": {},
+					"behaviors": {
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 150,
+								"cone-of-view": 15,
+								"use-collision-cells": true
+							}
+						},
+						"Угасание": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 146.10769778508623,
+						"y": 612.7830554479209,
+						"width": 10,
+						"height": 9,
+						"originX": 0.3,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}

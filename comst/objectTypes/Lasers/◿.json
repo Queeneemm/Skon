@@ -4,7 +4,13 @@
 	"sid": 620304667061977,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 335085183790339
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,12 +19,24 @@
 					{
 						"width": 10,
 						"height": 10,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.4,
+						"originY": 0.4,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9739375,
+						"imageSpriteId": 2098666,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

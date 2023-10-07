@@ -4,7 +4,13 @@
 	"sid": 888815288320596,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 826804215232802
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8242592,
+						"imageSpriteId": 6459242,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

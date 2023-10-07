@@ -1421,10 +1421,10 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "◸",
-							"sid": 280785996247775,
+							"objectClass": "Laser",
+							"sid": 213676835790996,
 							"parameters": {
-								"object": "Laser"
+								"object": "◸"
 							}
 						}
 					],
@@ -1440,12 +1440,12 @@
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 231705171053602,
+							"sid": 311390628130932,
 							"parameters": {
 								"object-to-create": "Laser",
 								"layer": "2",
 								"x": "◸.X",
-								"y": "◹.Y",
+								"y": "◸.Y",
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
@@ -1453,9 +1453,9 @@
 						{
 							"id": "set-angle",
 							"objectClass": "Laser",
-							"sid": 287726763157717,
+							"sid": 567291430577576,
 							"parameters": {
-								"angle": "◹.Angle"
+								"angle": "◸.Angle"
 							}
 						}
 					],
@@ -1485,12 +1485,12 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 182093116314316,
+									"sid": 243196720012104,
 									"parameters": {
 										"object-to-create": "Laser",
 										"layer": "2",
 										"x": "◹.X",
-										"y": "RecR.Y",
+										"y": "◹.Y",
 										"create-hierarchy": false,
 										"template-name": "\"\""
 									}
@@ -1498,13 +1498,107 @@
 								{
 									"id": "set-angle",
 									"objectClass": "Laser",
-									"sid": 697706448454316,
+									"sid": 527623035713936,
 									"parameters": {
-										"angle": "RecR.Angle"
+										"angle": "◹.Angle"
 									}
 								}
 							],
-							"sid": 775012460330541
+							"sid": 775012460330541,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Laser",
+											"sid": 848138219240208,
+											"parameters": {
+												"object": "◿"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 743175965345251,
+											"parameters": {
+												"seconds": "0.2"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 882908357440861,
+											"parameters": {
+												"object-to-create": "Laser",
+												"layer": "2",
+												"x": "◿.X",
+												"y": "◿.Y",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "Laser",
+											"sid": 986082829945602,
+											"parameters": {
+												"angle": "◿.Angle"
+											}
+										}
+									],
+									"sid": 913923272292267,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Laser",
+													"sid": 490958550048535,
+													"parameters": {
+														"object": "◺"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 399579434561273,
+													"parameters": {
+														"seconds": "0.2"
+													}
+												},
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 189570190788775,
+													"parameters": {
+														"object-to-create": "Laser",
+														"layer": "2",
+														"x": "◺.X",
+														"y": "◺.Y",
+														"create-hierarchy": false,
+														"template-name": "\"\""
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Laser",
+													"sid": 895603824820235,
+													"parameters": {
+														"angle": "◺.Angle"
+													}
+												}
+											],
+											"sid": 649148360236679
+										}
+									]
+								}
+							]
 						}
 					]
 				}

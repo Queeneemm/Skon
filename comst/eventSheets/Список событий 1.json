@@ -1339,6 +1339,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 651374324343891,
+					"parameters": {
+						"animation": "\"Active\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Lever_Off",
 					"sid": 929323903607348
@@ -1622,6 +1631,46 @@
 				}
 			],
 			"sid": 190819235368897
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 204573052014045
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Light_Player2",
+					"sid": 766942098167060,
+					"parameters": {
+						"x": "Goffman.X",
+						"y": "Goffman.Y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Light",
+					"sid": 579643100013562,
+					"parameters": {
+						"x": "Lantern.X",
+						"y": "Lantern.Y"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Light2",
+					"sid": 574968495118810,
+					"parameters": {
+						"x": "Fire2.X",
+						"y": "Fire2.Y"
+					}
+				}
+			],
+			"sid": 330513505786968
 		}
 	],
 	"sid": 567197488118894

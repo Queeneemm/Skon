@@ -143,7 +143,6 @@
 	"uniqueId": "odt8i6ws23s",
 	"objectTypes": {
 		"items": [
-			"КартаТайлов",
 			"Goffman",
 			"Частицы",
 			"Частицы2",
@@ -152,8 +151,10 @@
 			"Мышь",
 			"t",
 			"Аудио",
-			"КартаФона",
-			"Light"
+			"Light",
+			"Light_Player",
+			"Light_Player2",
+			"Light2"
 		],
 		"subfolders": [
 			{
@@ -176,9 +177,19 @@
 					"Kust",
 					"Icepeak_cut",
 					"Lantern",
-					"Stair"
+					"Stair",
+					"Platform2"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"КартаТайлов",
+							"КартаФона"
+						],
+						"subfolders": [],
+						"name": "TileSet"
+					}
+				],
 				"name": "Object"
 			},
 			{

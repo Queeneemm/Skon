@@ -1,14 +1,14 @@
 {
-	"name": "Light",
+	"name": "Light2",
 	"plugin-id": "Sprite",
-	"sid": 356155497222671,
+	"sid": 831845431528832,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",
 			"name": "Синусоид",
-			"sid": 499654842409098
+			"sid": 896408886959024
 		}
 	],
 	"effectTypes": [],
@@ -24,13 +24,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4546827,
+						"imageSpriteId": 6244421,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 596541684602952,
+				"sid": 711496957459251,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

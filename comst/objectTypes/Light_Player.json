@@ -1,14 +1,14 @@
 {
-	"name": "Light",
+	"name": "Light_Player",
 	"plugin-id": "Sprite",
-	"sid": 356155497222671,
+	"sid": 934963685658406,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",
 			"name": "Синусоид",
-			"sid": 499654842409098
+			"sid": 443366677721939
 		}
 	],
 	"effectTypes": [],
@@ -17,20 +17,20 @@
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 64,
+						"width": 34,
+						"height": 34,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4546827,
+						"imageSpriteId": 202455,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 596541684602952,
+				"sid": 400652676007404,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

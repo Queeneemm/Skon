@@ -1,19 +1,24 @@
 {
-	"name": "Icepeak",
+	"name": "Platform2",
 	"plugin-id": "Sprite",
-	"sid": 136698559113730,
+	"sid": 241593536008016,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",
 			"name": "Физика",
-			"sid": 159083528225664
+			"sid": 410203600857284
 		},
 		{
-			"behaviorId": "LOS",
-			"name": "ПолеЗрения",
-			"sid": 361327664161885
+			"behaviorId": "jumpthru",
+			"name": "СквознаяПлатформа",
+			"sid": 489211405709205
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Синусоид",
+			"sid": 279867868950915
 		}
 	],
 	"effectTypes": [],
@@ -23,22 +28,22 @@
 				"frames": [
 					{
 						"width": 10,
-						"height": 9,
-						"originX": 0.3,
-						"originY": 0.5555555555555556,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6261995,
+						"imageSpriteId": 3669091,
 						"collisionPoly": {
 							"points": [
 								0,
+								0.49218750000000017,
+								1,
+								0.49531250000000027,
+								1,
 								1,
 								0,
-								0,
-								1,
-								0,
-								1,
 								1
 							]
 						},
@@ -47,7 +52,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 417731564581697,
+				"sid": 133379752927864,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

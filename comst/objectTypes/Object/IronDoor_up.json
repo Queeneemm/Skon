@@ -4,21 +4,39 @@
 	"sid": 336019313658163,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 815214773761262
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 10,
-						"height": 10,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 16,
+						"height": 21,
+						"originX": 0.625,
+						"originY": 0.5238095238095238,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6811048,
+						"imageSpriteId": 6026562,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.2857142857142857,
+								0.9375,
+								0.2857142857142857,
+								0.9375,
+								0.7619047619047619,
+								0.3125,
+								0.7619047619047619
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

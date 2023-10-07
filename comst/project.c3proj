@@ -178,7 +178,9 @@
 					"Icepeak_cut",
 					"Lantern",
 					"Stair",
-					"Platform2"
+					"Platform2",
+					"Lever_Off2",
+					"Lever_On2"
 				],
 				"subfolders": [
 					{

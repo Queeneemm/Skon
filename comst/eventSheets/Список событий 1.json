@@ -1671,6 +1671,95 @@
 				}
 			],
 			"sid": 330513505786968
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Goffman",
+					"sid": 254325686199980,
+					"parameters": {
+						"object": "Lever_Off2"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 747345437805030,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 636397748307969,
+					"parameters": {
+						"animation": "\"Active\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "IronDoor_up",
+					"sid": 904606990139677,
+					"parameters": {
+						"y": "IronDoor_up.Y-25"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Lever_Off2",
+					"sid": 998015866472349
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Lever_Off2",
+					"sid": 119330882460773,
+					"parameters": {
+						"object": "Lever_On2",
+						"layer": "2",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 830795838194512,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "IronDoor_up",
+					"sid": 858428933266051,
+					"parameters": {
+						"y": "IronDoor_up.Y+25"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Lever_On2",
+					"sid": 550304568702657,
+					"parameters": {
+						"object": "Lever_Off2",
+						"layer": "2",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Lever_On2",
+					"sid": 252291960363665
+				}
+			],
+			"sid": 200892645376942
 		}
 	],
 	"sid": 567197488118894

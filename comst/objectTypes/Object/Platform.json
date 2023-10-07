@@ -6,11 +6,6 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Physics",
-			"name": "Физика",
-			"sid": 568031583474716
-		},
-		{
 			"behaviorId": "jumpthru",
 			"name": "СквознаяПлатформа",
 			"sid": 182470512081286

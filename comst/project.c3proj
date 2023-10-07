@@ -227,7 +227,8 @@
 				"items": [
 					"Tornado",
 					"PortalIn",
-					"PortalOut"
+					"PortalOut",
+					"IceWall"
 				],
 				"subfolders": [],
 				"name": "Skills"

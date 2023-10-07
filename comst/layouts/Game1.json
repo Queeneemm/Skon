@@ -91,20 +91,6 @@
 					"uid": 192871,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -140,20 +126,6 @@
 					"uid": 527345,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -189,20 +161,6 @@
 					"uid": 920835,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -238,20 +196,6 @@
 					"uid": 526905,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -925,20 +869,6 @@
 					"uid": 891852,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -1792,7 +1722,7 @@
 						"Физика": {
 							"properties": {
 								"immovable": false,
-								"collision-mask": "circle",
+								"collision-mask": "use-collision-polygon",
 								"prevent-rotation": true,
 								"density": 10,
 								"friction": 1,
@@ -1811,8 +1741,8 @@
 						}
 					},
 					"world": {
-						"x": 54.35544287844165,
-						"y": 551.5352281121134,
+						"x": 50.41018667350137,
+						"y": 550.9434396813724,
 						"width": 12,
 						"height": 9,
 						"originX": 0.5,
@@ -1842,7 +1772,7 @@
 						"Физика": {
 							"properties": {
 								"immovable": false,
-								"collision-mask": "circle",
+								"collision-mask": "use-collision-polygon",
 								"prevent-rotation": true,
 								"density": 10,
 								"friction": 1,
@@ -1918,20 +1848,6 @@
 					"uid": 295395,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -1967,20 +1883,6 @@
 					"uid": 384989,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -2016,20 +1918,6 @@
 					"uid": 154547,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -2268,20 +2156,6 @@
 					"uid": 715451,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -2429,7 +2303,7 @@
 					"type": "Lantern",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Lantern_Fired",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2464,7 +2338,7 @@
 					"type": "Lantern",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Lantern_Fired",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2499,7 +2373,7 @@
 					"type": "Lantern",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Lantern_Fired",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2534,7 +2408,7 @@
 					"type": "Lantern",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Default",
+						"initial-animation": "Lantern_Fired",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2714,7 +2588,7 @@
 						"Физика": {
 							"properties": {
 								"immovable": false,
-								"collision-mask": "circle",
+								"collision-mask": "use-collision-polygon",
 								"prevent-rotation": true,
 								"density": 10,
 								"friction": 1,
@@ -2761,20 +2635,6 @@
 					"uid": 453512,
 					"instanceVariables": {},
 					"behaviors": {
-						"Физика": {
-							"properties": {
-								"immovable": false,
-								"collision-mask": "use-collision-polygon",
-								"prevent-rotation": false,
-								"density": 1,
-								"friction": 0.5,
-								"elasticity": 0.2,
-								"linear-damping": 0,
-								"angular-damping": 0.01,
-								"bullet": false,
-								"enabled": false
-							}
-						},
 						"СквознаяПлатформа": {
 							"properties": {
 								"enabled": true
@@ -3100,6 +2960,126 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "IceWall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 423809,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"Угасание": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": -313.72552490234375,
+						"y": 684.659423828125,
+						"width": 10,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "IceWall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 213263,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						},
+						"Физика": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": false
+							}
+						},
+						"Угасание": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": -31.849501114108023,
+						"y": 629.7825998278004,
+						"width": 10,
+						"height": 15,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

@@ -1828,6 +1828,109 @@
 				}
 			],
 			"sid": 683175639883685
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Мышь",
+					"sid": 591842272760492,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "double-clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 443329983721015,
+					"parameters": {
+						"object-to-create": "IceWall",
+						"layer": "2",
+						"x": "Мышь.X",
+						"y": "Мышь.Y-8",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "IceWall",
+					"sid": 981385145938021,
+					"parameters": {
+						"animation": "\"IceSpawn\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 174008618262960,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "IceWall",
+					"sid": 621129117145089,
+					"behaviorType": "Угасание"
+				}
+			],
+			"sid": 230349827250117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "IceWall",
+					"sid": 935908813941750,
+					"parameters": {
+						"object": "Box"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "apply-impulse",
+					"objectClass": "Box",
+					"sid": 100743287158690,
+					"behaviorType": "Физика",
+					"parameters": {
+						"impulse-x": "0",
+						"implulse-y": "-1",
+						"image-point": "0"
+					}
+				}
+			],
+			"sid": 771076541679512,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 642849968823062,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "IceWall",
+							"sid": 398984872423658,
+							"behaviorType": "Угасание"
+						}
+					],
+					"sid": 130334731550928
+				}
+			]
 		}
 	],
 	"sid": 567197488118894

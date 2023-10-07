@@ -37,6 +37,128 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9283703,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0,
+								0.6,
+								0,
+								0.7,
+								0.1,
+								0.9,
+								0.4,
+								0.9,
+								0.8,
+								0.7,
+								0.9,
+								0.3,
+								0.9,
+								0.1,
+								0.8,
+								0.1,
+								0.4,
+								0.3,
+								0.1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6453389,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0,
+								0.6,
+								0,
+								0.7,
+								0.1,
+								0.9,
+								0.4,
+								0.9,
+								0.8,
+								0.7,
+								0.9,
+								0.3,
+								0.9,
+								0.1,
+								0.8,
+								0.1,
+								0.4,
+								0.3,
+								0.1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4065837,
+						"collisionPoly": {
+							"points": [
+								0.4,
+								0,
+								0.6,
+								0,
+								0.7,
+								0.1,
+								0.9,
+								0.4,
+								0.9,
+								0.8,
+								0.7,
+								0.9,
+								0.3,
+								0.9,
+								0.1,
+								0.8,
+								0.1,
+								0.4,
+								0.3,
+								0.1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 917303277487797,
+				"name": "Lantern_Fired",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
 			}
 		],
 		"subfolders": []

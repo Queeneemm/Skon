@@ -4,7 +4,13 @@
 	"sid": 322164678685183,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 209871807914505
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,7 +19,7 @@
 					{
 						"width": 10,
 						"height": 10,
-						"originX": 0.5,
+						"originX": 0.6,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",

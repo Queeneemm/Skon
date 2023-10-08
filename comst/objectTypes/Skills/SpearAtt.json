@@ -1,37 +1,31 @@
 {
-	"name": "Light_Player2",
+	"name": "SpearAtt",
 	"plugin-id": "Sprite",
-	"sid": 458661534388765,
+	"sid": 501676849419684,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Sin",
-			"name": "Синусоид",
-			"sid": 227698014702700
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 128,
-						"height": 128,
-						"originX": 0.5,
-						"originY": 0.5303030303030303,
+						"width": 5,
+						"height": 14,
+						"originX": 0.4,
+						"originY": 0.2857142857142857,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6184981,
+						"imageSpriteId": 4403292,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 976256397813901,
-				"name": "Animation 1",
+				"sid": 441602342273382,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

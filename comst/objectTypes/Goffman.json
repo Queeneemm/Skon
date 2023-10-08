@@ -1044,6 +1044,42 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 14,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3432337,
+						"collisionPoly": {
+							"points": [
+								0.8976744186046509,
+								0,
+								0.8976744186046509,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 785950539333191,
+				"name": "Gof_WFL",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

@@ -1662,7 +1662,7 @@
 							1,
 							1
 						],
-						"angle": 6.270749703003545,
+						"angle": 3.141592653589793,
 						"zElevation": 0
 					}
 				},
@@ -1751,8 +1751,8 @@
 						}
 					},
 					"world": {
-						"x": 331.43616907838566,
-						"y": 539.7905273437499,
+						"x": 309.36687851185224,
+						"y": 542.5229156996065,
 						"width": 10,
 						"height": 10,
 						"originX": 0.5,
@@ -1764,6 +1764,42 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "◸",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 538114,
+					"instanceVariables": {},
+					"behaviors": {
+						"Твердый": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 243.02023621377663,
+						"y": 542.051022273231,
+						"width": 10,
+						"height": 10,
+						"originX": 0.4,
+						"originY": 0.4,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				}

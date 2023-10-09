@@ -974,6 +974,27 @@
 						}
 					],
 					"sid": 158734295508067
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "SpearAtt",
+							"sid": 376569870190456,
+							"parameters": {
+								"object": "Slime"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Slime",
+							"sid": 334411553625616
+						}
+					],
+					"sid": 270254089538105
 				}
 			],
 			"sid": 792591111927928
@@ -2061,25 +2082,79 @@
 					}
 				},
 				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Lever_On2",
+					"sid": 895799837752571,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 830795838194512,
+					"sid": 158586464266330,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Lever_On2",
+					"sid": 142456792435239,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 200892645376942
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Goffman",
+					"sid": 371019050213492,
+					"parameters": {
+						"object": "Lever_On2"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Клавиатура",
+					"sid": 463049501704950,
+					"parameters": {
+						"key": 70
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 432300213496355,
+					"parameters": {
+						"animation": "\"Active\"",
+						"from": "beginning"
 					}
 				},
 				{
 					"id": "set-y",
 					"objectClass": "IronDoor_up",
-					"sid": 858428933266051,
+					"sid": 312858159908724,
 					"parameters": {
 						"y": "IronDoor_up.Y+25"
 					}
 				},
 				{
+					"id": "destroy",
+					"objectClass": "Lever_On2",
+					"sid": 598481502394806
+				},
+				{
 					"id": "spawn-another-object",
 					"objectClass": "Lever_On2",
-					"sid": 550304568702657,
+					"sid": 193700333798787,
 					"parameters": {
 						"object": "Lever_Off2",
 						"layer": "2",
@@ -2088,12 +2163,31 @@
 					}
 				},
 				{
-					"id": "destroy",
-					"objectClass": "Lever_On2",
-					"sid": 252291960363665
+					"id": "set-collisions-enabled",
+					"objectClass": "Lever_Off2",
+					"sid": 432444059289899,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 667869378755585,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "Lever_Off2",
+					"sid": 735429769067737,
+					"parameters": {
+						"collisions": "enabled"
+					}
 				}
 			],
-			"sid": 200892645376942
+			"sid": 418806096069363
 		},
 		{
 			"eventType": "block",

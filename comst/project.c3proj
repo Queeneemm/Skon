@@ -78,6 +78,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Перетаскивание",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Направлений",
 			"author": "Scirra",

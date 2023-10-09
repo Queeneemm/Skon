@@ -6,9 +6,9 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "LOS",
-			"name": "ПолеЗрения",
-			"sid": 546046710446768
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 996545753482979
 		}
 	],
 	"effectTypes": [],
@@ -27,14 +27,14 @@
 						"imageSpriteId": 8933261,
 						"collisionPoly": {
 							"points": [
-								0,
+								0.5717948717948715,
+								0.43333333333333346,
+								0.2948717948717947,
+								0.0076923076923076945,
 								1,
 								0,
-								0,
-								1,
-								0,
-								1,
-								1
+								0.8557291666666677,
+								0.7068509615384623
 							]
 						},
 						"useCollisionPoly": true,

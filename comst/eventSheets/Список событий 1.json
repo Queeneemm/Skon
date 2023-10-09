@@ -640,6 +640,49 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Spear",
+							"sid": 702290594292204,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Stair",
+							"sid": 967441658362302,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 155436176309699
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Spear",
+							"sid": 472174216708878
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Stair",
+							"sid": 913297547764211,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 947318068749893
 				}
 			],
 			"sid": 478242992800650
@@ -1903,7 +1946,7 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "EmmR",
-									"sid": 846627316222270,
+									"sid": 657299566055683,
 									"parameters": {
 										"object": "Laser",
 										"layer": "2",
@@ -1914,13 +1957,13 @@
 								{
 									"id": "set-width",
 									"objectClass": "Laser",
-									"sid": 198335298236173,
+									"sid": 152378428499605,
 									"parameters": {
 										"width": "abs(distance(RecR.X, RecR.Y,EmmR.X, EmmR.Y))+(abs(distance(RecR.X, RecR.Y,EmmR.X, EmmR.Y))/5)"
 									}
 								}
 							],
-							"sid": 614379026969686
+							"sid": 717429822411091
 						}
 					]
 				},
@@ -2056,77 +2099,154 @@
 			"sid": 375588619420985
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Ligth",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 204573052014045
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Light_Player",
-					"sid": 766942098167060,
-					"parameters": {
-						"x": "Goffman.X",
-						"y": "Goffman.Y"
-					}
-				}
-			],
-			"sid": 330513505786968
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 802842941314648
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Fire2",
-					"sid": 410137338792329,
-					"parameters": {
-						"object": "Light",
-						"layer": "4",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 867022737823308
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Light_Player",
+							"sid": 801603823789503,
+							"parameters": {
+								"x": "Goffman.X",
+								"y": "Goffman.Y"
+							}
+						}
+					],
+					"sid": 119634834030581
 				},
 				{
-					"id": "set-blend-mode",
-					"objectClass": "Light",
-					"sid": 179779581818908,
-					"parameters": {
-						"blend-mode": "destination-out"
-					}
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Lantern",
-					"sid": 390383851508353,
-					"parameters": {
-						"object": "Light",
-						"layer": "4",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				},
-				{
-					"id": "set-blend-mode",
-					"objectClass": "Light",
-					"sid": 561898011827795,
-					"parameters": {
-						"blend-mode": "destination-out"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 177208036197718
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Fire2",
+							"sid": 660024849460428,
+							"parameters": {
+								"object": "Light",
+								"layer": "4",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-blend-mode",
+							"objectClass": "Light",
+							"sid": 619725214688458,
+							"parameters": {
+								"blend-mode": "destination-out"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lantern",
+							"sid": 466619885413826,
+							"parameters": {
+								"object": "Light",
+								"layer": "4",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lantern",
+							"sid": 152081877720242,
+							"parameters": {
+								"object": "Частицы",
+								"layer": "4",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "rotate-counter-clockwise",
+							"objectClass": "Частицы",
+							"sid": 866287267931427,
+							"parameters": {
+								"degrees": "90"
+							}
+						},
+						{
+							"id": "set-rate",
+							"objectClass": "Частицы",
+							"sid": 499345671100900,
+							"parameters": {
+								"rate": "1"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Частицы",
+							"sid": 439520297874161,
+							"parameters": {
+								"size": "2"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Частицы",
+							"sid": 559069505309636,
+							"parameters": {
+								"acceleration": "0"
+							}
+						},
+						{
+							"id": "set-life-speed-randomiser",
+							"objectClass": "Частицы",
+							"sid": 629154813714800,
+							"parameters": {
+								"speed-randomiser": "5"
+							}
+						},
+						{
+							"id": "set-spray-cone",
+							"objectClass": "Частицы",
+							"sid": 529233706321360,
+							"parameters": {
+								"spray-cone": "180"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Частицы",
+							"sid": 168250176868869,
+							"parameters": {
+								"speed": "7"
+							}
+						},
+						{
+							"id": "set-blend-mode",
+							"objectClass": "Light",
+							"sid": 959948199960983,
+							"parameters": {
+								"blend-mode": "destination-out"
+							}
+						}
+					],
+					"sid": 732264957047679
 				}
 			],
-			"sid": 423462528758958
+			"sid": 964352045809872
 		},
 		{
 			"eventType": "block",
@@ -2373,26 +2493,26 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 562626319875925
+							"sid": 826738703419193
 						}
 					],
 					"actions": [
 						{
 							"id": "move-to-bottom",
 							"objectClass": "Spear",
-							"sid": 349962304964078
+							"sid": 963996657701604
 						},
 						{
 							"id": "set-position",
 							"objectClass": "Spear",
-							"sid": 820548738165508,
+							"sid": 414591251837655,
 							"parameters": {
 								"x": "Goffman.X-2",
 								"y": "Goffman.Y-5"
 							}
 						}
 					],
-					"sid": 847298882626811,
+					"sid": 181301710436251,
 					"children": [
 						{
 							"eventType": "block",
@@ -2400,21 +2520,21 @@
 								{
 									"id": "is-mirrored",
 									"objectClass": "Goffman",
-									"sid": 230602885650677
+									"sid": 728701250943034
 								}
 							],
 							"actions": [
 								{
 									"id": "set-position",
 									"objectClass": "Spear",
-									"sid": 546659576261822,
+									"sid": 241312742206114,
 									"parameters": {
 										"x": "Spear.X+4",
 										"y": "Spear.Y"
 									}
 								}
 							],
-							"sid": 572427698203323
+							"sid": 570671119271124
 						},
 						{
 							"eventType": "block",
@@ -2422,7 +2542,7 @@
 								{
 									"id": "is-animation-playing",
 									"objectClass": "Goffman",
-									"sid": 172629634097572,
+									"sid": 184827216523049,
 									"parameters": {
 										"animation": "\"Gof_Up\""
 									}
@@ -2432,19 +2552,19 @@
 								{
 									"id": "move-to-top",
 									"objectClass": "Spear",
-									"sid": 778491431864465
+									"sid": 164371807038709
 								},
 								{
 									"id": "set-position",
 									"objectClass": "Spear",
-									"sid": 908696938666219,
+									"sid": 537946587047680,
 									"parameters": {
 										"x": "Spear.X+3",
 										"y": "Spear.Y"
 									}
 								}
 							],
-							"sid": 463209898068810,
+							"sid": 698626458300977,
 							"children": [
 								{
 									"eventType": "block",
@@ -2452,21 +2572,21 @@
 										{
 											"id": "is-mirrored",
 											"objectClass": "Goffman",
-											"sid": 960753198621952
+											"sid": 502993365086448
 										}
 									],
 									"actions": [
 										{
 											"id": "set-position",
 											"objectClass": "Spear",
-											"sid": 746078052854832,
+											"sid": 290711149103925,
 											"parameters": {
 												"x": "Spear.X-4",
 												"y": "Spear.Y"
 											}
 										}
 									],
-									"sid": 194895794994153
+									"sid": 357767057514816
 								}
 							]
 						}
@@ -2476,100 +2596,155 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
+							"id": "on-left-right-key-pressed",
 							"objectClass": "Клавиатура",
-							"sid": 587207118916209,
+							"sid": 578792048900292,
 							"parameters": {
-								"key": 81
+								"key": "left-shift"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "Goffman",
-							"sid": 144449362943576,
-							"behaviorType": "Платформер",
-							"parameters": {
-								"input": "start-ignoring"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Goffman",
-							"sid": 559455662101577,
-							"parameters": {
-								"animation": "\"Guy_Attack\"",
-								"from": "beginning"
-							}
-						},
-						{
 							"id": "set-visible",
 							"objectClass": "Spear",
-							"sid": 813851166192091,
+							"sid": 339967672501324,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 409435461904294
+					"sid": 925160103504956
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-animation-playing",
-							"objectClass": "Goffman",
-							"sid": 259834855504865,
+							"id": "on-left-right-key-pressed",
+							"objectClass": "Клавиатура",
+							"sid": 266465194819988,
 							"parameters": {
-								"animation": "\"Gof_Run\""
+								"key": "left-shift"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "Goffman",
-							"sid": 691247177732609,
-							"behaviorType": "Платформер",
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 513821022797633,
 							"parameters": {
-								"input": "stop-ignoring"
+								"object-to-create": "SpearAtt",
+								"layer": "3",
+								"x": "Goffman.X",
+								"y": "Goffman.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						}
 					],
-					"sid": 358110219659041
+					"sid": 595143341406311
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-any-animation-finished",
+							"id": "is-mirrored",
 							"objectClass": "Goffman",
-							"sid": 768491488084967
+							"sid": 795249065854899
 						}
 					],
 					"actions": [
 						{
-							"id": "set-ignoring-input",
-							"objectClass": "Goffman",
-							"sid": 703610887203816,
-							"behaviorType": "Платформер",
+							"id": "set-mirrored",
+							"objectClass": "SpearAtt",
+							"sid": 874619191775587,
 							"parameters": {
-								"input": "stop-ignoring"
+								"state": "mirrored"
 							}
 						}
 					],
-					"sid": 410563516874067
+					"sid": 127063495212013,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 836976663508178
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "SpearAtt",
+									"sid": 400437192782592,
+									"parameters": {
+										"x": "Goffman.X-7",
+										"y": "Goffman.Y+2"
+									}
+								}
+							],
+							"sid": 502500405651272
+						}
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-animation-playing",
+							"id": "is-mirrored",
 							"objectClass": "Goffman",
-							"sid": 260526166645968,
+							"sid": 601666106157426,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "SpearAtt",
+							"sid": 406113698692784,
 							"parameters": {
-								"animation": "\"Gof_Idle\""
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 856354159732518,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 675891305204727
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "SpearAtt",
+									"sid": 866129023797006,
+									"parameters": {
+										"x": "Goffman.X+7",
+										"y": "Goffman.Y+2"
+									}
+								}
+							],
+							"sid": 531977428129760
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-left-right-key-released",
+							"objectClass": "Клавиатура",
+							"sid": 990124650575046,
+							"parameters": {
+								"key": "left-shift"
 							}
 						}
 					],
@@ -2577,74 +2752,26 @@
 						{
 							"id": "set-visible",
 							"objectClass": "Spear",
-							"sid": 542274562704922,
+							"sid": 589029786471634,
 							"parameters": {
 								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 422576320405452
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "Goffman",
-							"sid": 325116021657695,
-							"parameters": {
-								"animation": "\"Gof_Run\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Spear",
-							"sid": 156065950720984,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 123076467073501
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "Goffman",
-							"sid": 822716998573318,
-							"parameters": {
-								"animation": "\"Guy_Attack\""
 							}
 						},
 						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Goffman",
-							"sid": 173652186436429,
-							"parameters": {
-								"object": "Slime"
-							}
-						}
-					],
-					"actions": [
-						{
 							"id": "destroy",
-							"objectClass": "Slime",
-							"sid": 631129833656714
+							"objectClass": "SpearAtt",
+							"sid": 415955953551452
 						}
 					],
-					"sid": 904359646464123
+					"sid": 256994220151308
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "compare-animation-frame",
-							"objectClass": "Spear",
-							"sid": 303351537395335,
+							"objectClass": "Goffman",
+							"sid": 779010014744179,
 							"parameters": {
 								"comparison": 0,
 								"number": "0"
@@ -2654,14 +2781,56 @@
 					"actions": [
 						{
 							"id": "set-animation-frame",
-							"objectClass": "Goffman",
-							"sid": 629585146426817,
+							"objectClass": "Spear",
+							"sid": 151397988584570,
 							"parameters": {
 								"frame-number": "0"
 							}
 						}
 					],
 					"sid": 845072598633092
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Goffman",
+							"sid": 710305592595004,
+							"parameters": {
+								"object": "Fire2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Spear",
+							"sid": 770423829062603
+						}
+					],
+					"sid": 571610193810616
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Goffman",
+							"sid": 144100811429101,
+							"parameters": {
+								"animation": "\"IceDead\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Spear",
+							"sid": 491421468104589
+						}
+					],
+					"sid": 626502958445521
 				}
 			],
 			"sid": 529243791266667

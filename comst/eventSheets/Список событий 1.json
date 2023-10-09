@@ -230,6 +230,16 @@
 									"parameters": {
 										"gravity": "0"
 									}
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Goffman",
+									"sid": 375024527806313
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Spear",
+									"sid": 726548195771391
 								}
 							],
 							"sid": 141990179929038
@@ -341,6 +351,16 @@
 									"parameters": {
 										"gravity": "0"
 									}
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Goffman",
+									"sid": 226463777823968
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Spear",
+									"sid": 813657645867426
 								}
 							],
 							"sid": 678419634133100
@@ -366,6 +386,15 @@
 									"behaviorType": "Платформер",
 									"parameters": {
 										"gravity": "1000"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Spear",
+									"sid": 446344329463646,
+									"parameters": {
+										"animation": "\"Spear_On_Guy\"",
+										"from": "beginning"
 									}
 								}
 							],
@@ -748,11 +777,11 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Box",
-							"sid": 659782500167379,
+							"sid": 993916351503633,
 							"behaviorType": "Физика",
 							"parameters": {
 								"impulse": "0.7",
-								"angle": "180",
+								"angle": "0",
 								"image-point": "0"
 							}
 						}
@@ -772,11 +801,11 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Box",
-							"sid": 417315033744824,
+							"sid": 811443079929001,
 							"behaviorType": "Физика",
 							"parameters": {
 								"impulse": "0.7",
-								"angle": "0",
+								"angle": "180",
 								"image-point": "0"
 							}
 						}
@@ -1767,319 +1796,264 @@
 			"disabled": true
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Lever_Off",
-					"sid": 917980292411771,
-					"parameters": {
-						"object": "Goffman"
-					}
-				},
-				{
-					"id": "key-is-down",
-					"objectClass": "Клавиатура",
-					"sid": 406699616705265,
-					"parameters": {
-						"key": 70
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Goffman",
-					"sid": 651374324343891,
-					"parameters": {
-						"animation": "\"Active\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Lever_Off",
-					"sid": 929323903607348
-				},
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "Lever_On",
-					"sid": 999409013363694,
-					"parameters": {
-						"object": "Lever_Off",
-						"image-point-optional": "0"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Аудио",
-					"sid": 423681161997246,
-					"parameters": {
-						"audio-file": "laser_start",
-						"loop": "not-looping",
-						"volume": "-20",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Laser",
-					"sid": 794754474693409,
-					"parameters": {
-						"x": "EmmR.X",
-						"y": "EmmR.Y"
-					}
-				}
-			],
-			"sid": 405649887908276,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Lasers",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Laser",
-							"sid": 213676835790996,
+							"objectClass": "Lever_Off",
+							"sid": 235183704459358,
 							"parameters": {
-								"object": "◸"
+								"object": "Goffman"
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Клавиатура",
+							"sid": 536870605918410,
+							"parameters": {
+								"key": 70
+							}
+						},
+						{
+							"id": "is-within-angle",
+							"objectClass": "EmmR",
+							"sid": 319577648532375,
+							"parameters": {
+								"within": "0",
+								"angle": "0"
 							}
 						}
 					],
 					"actions": [
 						{
+							"id": "set-animation",
+							"objectClass": "Goffman",
+							"sid": 240732471802821,
+							"parameters": {
+								"animation": "\"Active\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Lever_Off",
+							"sid": 718414731355079
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 539636476180186,
+							"parameters": {
+								"audio-file": "laser_start",
+								"loop": "not-looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lever_Off",
+							"sid": 515336936728900,
+							"parameters": {
+								"object": "Lever_On",
+								"layer": "2",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Lever_On",
+							"sid": 497157481217376,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 726171262324168,
+							"sid": 530434948608765,
 							"parameters": {
-								"seconds": "0.2"
+								"seconds": "1.0"
 							}
 						},
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 311390628130932,
+							"id": "set-collisions-enabled",
+							"objectClass": "Lever_On",
+							"sid": 885105558659039,
 							"parameters": {
-								"object-to-create": "Laser",
-								"layer": "2",
-								"x": "◸.X",
-								"y": "◸.Y",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
-						},
-						{
-							"id": "set-angle",
-							"objectClass": "Laser",
-							"sid": 567291430577576,
-							"parameters": {
-								"angle": "◸.Angle"
+								"collisions": "enabled"
 							}
 						}
 					],
-					"sid": 878167635372582,
+					"sid": 825449184554247,
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "◹",
-									"sid": 532739306179585,
-									"parameters": {
-										"object": "Laser"
-									}
-								}
-							],
+							"conditions": [],
 							"actions": [
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 546293210883666,
+									"id": "spawn-another-object",
+									"objectClass": "EmmR",
+									"sid": 846627316222270,
 									"parameters": {
-										"seconds": "0.2"
-									}
-								},
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 243196720012104,
-									"parameters": {
-										"object-to-create": "Laser",
+										"object": "Laser",
 										"layer": "2",
-										"x": "◹.X",
-										"y": "◹.Y",
-										"create-hierarchy": false,
-										"template-name": "\"\""
+										"image-point": "0",
+										"create-hierarchy": false
 									}
 								},
 								{
-									"id": "set-angle",
+									"id": "set-width",
 									"objectClass": "Laser",
-									"sid": 527623035713936,
+									"sid": 198335298236173,
 									"parameters": {
-										"angle": "◹.Angle"
+										"width": "abs(distance(RecR.X, RecR.Y,EmmR.X, EmmR.Y))+(abs(distance(RecR.X, RecR.Y,EmmR.X, EmmR.Y))/5)"
 									}
 								}
 							],
-							"sid": 775012460330541,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-overlapping-another-object",
-											"objectClass": "Laser",
-											"sid": 848138219240208,
-											"parameters": {
-												"object": "◿"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 743175965345251,
-											"parameters": {
-												"seconds": "0.2"
-											}
-										},
-										{
-											"id": "create-object",
-											"objectClass": "System",
-											"sid": 882908357440861,
-											"parameters": {
-												"object-to-create": "Laser",
-												"layer": "2",
-												"x": "◿.X",
-												"y": "◿.Y",
-												"create-hierarchy": false,
-												"template-name": "\"\""
-											}
-										},
-										{
-											"id": "set-angle",
-											"objectClass": "Laser",
-											"sid": 986082829945602,
-											"parameters": {
-												"angle": "◿.Angle"
-											}
-										}
-									],
-									"sid": 913923272292267,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "is-overlapping-another-object",
-													"objectClass": "Laser",
-													"sid": 490958550048535,
-													"parameters": {
-														"object": "◺"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 399579434561273,
-													"parameters": {
-														"seconds": "0.2"
-													}
-												},
-												{
-													"id": "create-object",
-													"objectClass": "System",
-													"sid": 189570190788775,
-													"parameters": {
-														"object-to-create": "Laser",
-														"layer": "2",
-														"x": "◺.X",
-														"y": "◺.Y",
-														"create-hierarchy": false,
-														"template-name": "\"\""
-													}
-												},
-												{
-													"id": "set-angle",
-													"objectClass": "Laser",
-													"sid": 895603824820235,
-													"parameters": {
-														"angle": "◺.Angle"
-													}
-												}
-											],
-											"sid": 649148360236679
-										}
-									]
-								}
-							]
+							"sid": 614379026969686
 						}
 					]
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+				},
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Goffman",
-					"sid": 217511342643245,
-					"parameters": {
-						"object": "Laser"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Lever_On",
+							"sid": 242481967858449,
+							"parameters": {
+								"object": "Goffman"
+							}
+						},
+						{
+							"id": "key-is-down",
+							"objectClass": "Клавиатура",
+							"sid": 458742629994783,
+							"parameters": {
+								"key": 70
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Lever_On",
+							"sid": 874723153544320
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lever_On",
+							"sid": 871287055699154,
+							"parameters": {
+								"object": "Lever_Off",
+								"layer": "2",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Laser",
+							"sid": 622124543520640
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Lever_Off",
+							"sid": 472124312354534,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 529037923845600,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Lever_Off",
+							"sid": 985382953606755,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 371244700058556
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Goffman",
+							"sid": 312282881459532,
+							"parameters": {
+								"object": "Laser"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Goffman",
+							"sid": 673486920300511,
+							"parameters": {
+								"animation": "\"Fired\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 211250995673769,
+							"parameters": {
+								"audio-file": "death",
+								"loop": "not-looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Goffman",
+							"sid": 383299571965982,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 978950701080499,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Goffman",
+							"sid": 433584945930726
+						}
+					],
+					"sid": 819994356222139
 				}
 			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Goffman",
-					"sid": 220087214205480,
-					"parameters": {
-						"animation": "\"Fired\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Аудио",
-					"sid": 147715100426231,
-					"parameters": {
-						"audio-file": "death",
-						"loop": "not-looping",
-						"volume": "-20",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "Goffman",
-					"sid": 837488257587103,
-					"behaviorType": "Платформер",
-					"parameters": {
-						"state": "disabled"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 312487108002036,
-					"parameters": {
-						"seconds": "1.5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Goffman",
-					"sid": 296429220170167
-				}
-			],
-			"sid": 190819235368897
+			"sid": 375588619420985
 		},
 		{
 			"eventType": "block",
@@ -2663,6 +2637,31 @@
 						}
 					],
 					"sid": 904359646464123
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Spear",
+							"sid": 303351537395335,
+							"parameters": {
+								"comparison": 0,
+								"number": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Goffman",
+							"sid": 629585146426817,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 845072598633092
 				}
 			],
 			"sid": 529243791266667

@@ -11,14 +11,26 @@
 			{
 				"frames": [
 					{
-						"width": 5,
-						"height": 14,
-						"originX": 0.4,
-						"originY": 0.2857142857142857,
+						"width": 7,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.3125,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8019474,
+						"imageSpriteId": 1970780,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0.0625,
+								0.8571428571428571,
+								0.0625,
+								0.8571428571428571,
+								0.9375,
+								0.14285714285714285,
+								0.9375
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
@@ -27,6 +39,80 @@
 				"sid": 749642041972323,
 				"name": "Default",
 				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 7,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 493186,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0.0625,
+								0.8571428571428571,
+								0.0625,
+								0.8571428571428571,
+								0.9375,
+								0.14285714285714285,
+								0.9375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 7,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6875133,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0,
+								0.8571428571428571,
+								0,
+								0.8571428571428571,
+								0.9375,
+								0.14285714285714285,
+								0.9375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 7,
+						"height": 16,
+						"originX": 0.42857142857142855,
+						"originY": 0.375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 93357,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 238719833475428,
+				"name": "Spear_On_Guy",
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,

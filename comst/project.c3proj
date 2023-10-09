@@ -185,8 +185,6 @@
 					"IronDoor_bot",
 					"Lava_ball",
 					"Lava_ger",
-					"Lever_Off",
-					"Lever_On",
 					"Platform",
 					"Spawn",
 					"Chest",
@@ -232,7 +230,9 @@
 					"КартаЛазеров",
 					"◸",
 					"EmmR",
-					"RecR"
+					"RecR",
+					"Lever_Off",
+					"Lever_On"
 				],
 				"subfolders": [],
 				"name": "Lasers"

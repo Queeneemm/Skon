@@ -4,7 +4,13 @@
 	"sid": 743650095418283,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 852250665370914
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -32,6 +38,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.9166666666666666,
+								"y": 0.5
+							}
+						],
 						"duration": 1,
 						"tag": ""
 					}

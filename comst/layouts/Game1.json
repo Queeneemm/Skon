@@ -1882,7 +1882,7 @@
 					"behaviors": {
 						"Платформер": {
 							"properties": {
-								"max-speed": 100,
+								"max-speed": 101,
 								"acceleration": 1500,
 								"deceleration": 1500,
 								"jump-strength": 200,

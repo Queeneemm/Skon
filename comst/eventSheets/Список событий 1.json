@@ -558,6 +558,15 @@
 													"parameters": {
 														"key": 68
 													}
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Клавиатура",
+													"sid": 121777306372257,
+													"parameters": {
+														"key": 65
+													},
+													"isInverted": true
 												}
 											],
 											"actions": [
@@ -620,6 +629,15 @@
 													"parameters": {
 														"key": 65
 													}
+												},
+												{
+													"id": "key-is-down",
+													"objectClass": "Клавиатура",
+													"sid": 372138989565146,
+													"parameters": {
+														"key": 68
+													},
+													"isInverted": true
 												}
 											],
 											"actions": [

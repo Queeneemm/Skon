@@ -1188,7 +1188,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": false
+								"enabled": true
 							}
 						},
 						"Угасание": {
@@ -1205,10 +1205,10 @@
 					"world": {
 						"x": -66,
 						"y": 537,
-						"width": 10,
-						"height": 15,
+						"width": 12,
+						"height": 16,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.90625,
 						"color": [
 							1,
 							1,
@@ -1650,8 +1650,8 @@
 						}
 					},
 					"world": {
-						"x": 270.7858069262783,
-						"y": 541.4044767081771,
+						"x": 299.369642637427,
+						"y": 545.404477,
 						"width": 12,
 						"height": 12,
 						"originX": 0.6666666666666666,
@@ -1787,8 +1787,8 @@
 						}
 					},
 					"world": {
-						"x": 243.02023621377663,
-						"y": 542.051022273231,
+						"x": 245.5322527604265,
+						"y": 545.404477,
 						"width": 10,
 						"height": 10,
 						"originX": 0.4,
@@ -1800,6 +1800,52 @@
 							1
 						],
 						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Частицы",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 60,
+						"type": "continuous-spray",
+						"object": -1,
+						"initially-visible": true,
+						"live-preview": false,
+						"speed": 200,
+						"size": 32,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 1
+					},
+					"uid": 245686,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -185.9643317264943,
+						"y": 681.2438048930311,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

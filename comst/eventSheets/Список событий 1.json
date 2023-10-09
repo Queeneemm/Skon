@@ -2641,6 +2641,15 @@
 								"create-hierarchy": false,
 								"template-name": "\"\""
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "SpearAtt",
+							"sid": 853347679374905,
+							"parameters": {
+								"animation": "\"SpearHand\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 595143341406311
@@ -2783,6 +2792,14 @@
 							"id": "set-animation-frame",
 							"objectClass": "Spear",
 							"sid": 151397988584570,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "SpearAtt",
+							"sid": 362897722967919,
 							"parameters": {
 								"frame-number": "0"
 							}

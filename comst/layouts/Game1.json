@@ -2043,8 +2043,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 82.20488311569981,
-						"y": 560.2985883312236,
+						"x": 75.05570012775212,
+						"y": 556.277172900503,
 						"width": 7.339755793012238,
 						"height": 16,
 						"originX": 0.42857142857142855,
@@ -2127,23 +2127,11 @@
 							"properties": {
 								"enabled": true
 							}
-						},
-						"8Направлений": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"allow-sliding": false,
-								"default-controls": false,
-								"enabled": true
-							}
 						}
 					},
 					"world": {
-						"x": 298.3793710631129,
-						"y": 562.3666699303847,
+						"x": 245.4270979850808,
+						"y": 552.6143514669816,
 						"width": 9,
 						"height": 16,
 						"originX": 0.5,
@@ -2154,7 +2142,7 @@
 							1,
 							1
 						],
-						"angle": 0.008010746013888959,
+						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -2287,6 +2275,97 @@
 						"zElevation": 0,
 						"blendMode": "destination-out"
 					}
+				},
+				{
+					"type": "Light_Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 581624,
+					"instanceVariables": {},
+					"behaviors": {
+						"Синусоид": {
+							"properties": {
+								"movement": "opacity",
+								"wave": "sine",
+								"period": 1,
+								"period-random": 0,
+								"period-offset": 2,
+								"period-offset-random": 0,
+								"magnitude": 10,
+								"magnitude-random": 10,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 75.4605752763454,
+						"y": 70.54131750042843,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5303030303030303,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0,
+						"blendMode": "destination-out"
+					}
+				},
+				{
+					"type": "Частицы",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 60,
+						"type": "continuous-spray",
+						"object": -1,
+						"initially-visible": true,
+						"live-preview": false,
+						"speed": 200,
+						"size": 32,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 1
+					},
+					"uid": 899396,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -142.14270451084928,
+						"y": 251.50498767497433,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 848420081805594,
@@ -2323,49 +2402,53 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "ТайловыйФон",
+					"type": "HP",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 371008,
+					"uid": 372845,
 					"instanceVariables": {},
-					"behaviors": {
-						"Якорь": {
-							"properties": {
-								"left-edge": "window-left",
-								"top-edge": "window-top",
-								"right-edge": "none",
-								"bottom-edge": "none",
-								"enabled": true
-							}
-						},
-						"Прикрепить": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 1.022207909628193,
-						"y": 0.3100872077442176,
-						"width": 48,
-						"height": 16,
-						"originX": 0,
-						"originY": 0,
+						"x": -117.56833730377,
+						"y": 265.8059107429024,
+						"width": 43,
+						"height": 10,
+						"originX": 0.023255813953488372,
+						"originY": 0.375,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Mana",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 600191,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -117.6719602914535,
+						"y": 300.7388114299885,
+						"width": 25,
+						"height": 5,
+						"originX": 0.04,
+						"originY": 0.6,
 						"color": [
 							1,
 							1,
@@ -2395,6 +2478,41 @@
 						"height": 10.638594467757002,
 						"originX": 0.4,
 						"originY": 0.2727272727272727,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HPbar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 417543,
+					"instanceVariables": {},
+					"behaviors": {
+						"ОграничитьСценой": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": -119.32715872528644,
+						"y": 284.115779186057,
+						"width": 62,
+						"height": 21,
+						"originX": 0.27419354838709675,
+						"originY": 0.47619047619047616,
 						"color": [
 							1,
 							1,

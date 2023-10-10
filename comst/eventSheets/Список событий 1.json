@@ -1004,53 +1004,6 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Goffman",
-					"sid": 731440894469595,
-					"parameters": {
-						"object": "Slime"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-size",
-					"objectClass": "ТайловыйФон",
-					"sid": 968306004982905,
-					"parameters": {
-						"width": "ТайловыйФон.Width-16",
-						"height": "16"
-					}
-				}
-			],
-			"sid": 244228432185138
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-width",
-					"objectClass": "ТайловыйФон",
-					"sid": 585971944202946,
-					"parameters": {
-						"comparison": 0,
-						"width": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Goffman",
-					"sid": 294732569624451
-				}
-			],
-			"sid": 808755052468219
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
 					"objectClass": "Tornado",
 					"sid": 847781958624811,
 					"parameters": {
@@ -3242,6 +3195,83 @@
 				}
 			],
 			"sid": 861650089533957
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "HUD",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 569992103104801
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "HPbar",
+							"sid": 854124751079998,
+							"parameters": {
+								"x": "Goffman.X-115",
+								"y": "Goffman.Y-65"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "HP",
+							"sid": 395579897962662,
+							"parameters": {
+								"x": "HPbar.X",
+								"y": "HPbar.Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Mana",
+							"sid": 274365402985237,
+							"parameters": {
+								"x": "HPbar.X+1",
+								"y": "HPbar.Y+5"
+							}
+						}
+					],
+					"sid": 850990838549187,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Goffman",
+									"sid": 225338428406906,
+									"parameters": {
+										"object": "Slime"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "HP",
+									"sid": 874387536067083,
+									"parameters": {
+										"width": "HP.Width - 10",
+										"height": "HP.Height"
+									}
+								}
+							],
+							"sid": 655223984296887
+						}
+					]
+				}
+			],
+			"sid": 895280267732735
 		}
 	],
 	"sid": 567197488118894

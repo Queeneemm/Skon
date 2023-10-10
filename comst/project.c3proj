@@ -50,22 +50,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Тайловый фон",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Tilemap",
 			"name": "Карта тайлов",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Anchor",
-			"name": "Якорь",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -80,13 +66,6 @@
 			"type": "behavior",
 			"id": "DragnDrop",
 			"name": "Перетаскивание",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Направлений",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -148,6 +127,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "bound",
+			"name": "Ограничить сценой",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "jumpthru",
 			"name": "Сквозная платформа",
 			"author": "Scirra",
@@ -180,7 +166,9 @@
 			"Light",
 			"Light_Player",
 			"Light2",
-			"ТайловыйФон"
+			"HPbar",
+			"HP",
+			"Mana"
 		],
 		"subfolders": [
 			{

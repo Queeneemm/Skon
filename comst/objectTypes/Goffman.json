@@ -14,11 +14,6 @@
 			"behaviorId": "scrollto",
 			"name": "СледитьЗа",
 			"sid": 139217555167108
-		},
-		{
-			"behaviorId": "EightDir",
-			"name": "8Направлений",
-			"sid": 618860344488487
 		}
 	],
 	"effectTypes": [],

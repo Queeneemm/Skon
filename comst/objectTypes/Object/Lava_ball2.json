@@ -1,19 +1,19 @@
 {
-	"name": "Lava_ball",
+	"name": "Lava_ball2",
 	"plugin-id": "Sprite",
-	"sid": 141517811583839,
+	"sid": 354078024532685,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
 			"name": "8Направлений",
-			"sid": 231058832769423
+			"sid": 504177475170021
 		},
 		{
 			"behaviorId": "Platform",
 			"name": "Платформер",
-			"sid": 929350641942843
+			"sid": 268490200792547
 		}
 	],
 	"effectTypes": [],
@@ -29,7 +29,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4848302,
+						"imageSpriteId": 2328100,
 						"collisionPoly": {
 							"points": [
 								0.39677419354838694,
@@ -51,7 +51,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 268394419682084,
+				"sid": 138574600882808,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

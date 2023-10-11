@@ -13,6 +13,293 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Stairs",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Клавиатура",
+									"sid": 401256211950680,
+									"parameters": {
+										"key": 83
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Goffman",
+									"sid": 190068995922154,
+									"parameters": {
+										"object": "Stair"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Goffman",
+									"sid": 685353289170589,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"vector-y": "100"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Goffman",
+									"sid": 716537217891140,
+									"parameters": {
+										"animation": "\"Gof_Up\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 229970506234649,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Goffman",
+											"sid": 522346018743801,
+											"parameters": {
+												"object": "Stair"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Goffman",
+											"sid": 462476788949053,
+											"parameters": {
+												"x": "Stair.X",
+												"y": "Goffman.Y"
+											}
+										}
+									],
+									"sid": 223125950838965
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Клавиатура",
+									"sid": 538084035975623,
+									"parameters": {
+										"key": 83
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Goffman",
+									"sid": 501992122559894,
+									"parameters": {
+										"object": "Stair"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Goffman",
+									"sid": 915900758945474,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"vector-y": "Goffman.Платформер.VectorY * 0"
+									}
+								},
+								{
+									"id": "set-gravity",
+									"objectClass": "Goffman",
+									"sid": 637569569691219,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"gravity": "0"
+									}
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Goffman",
+									"sid": 455746782449977
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Spear",
+									"sid": 607087688797527
+								}
+							],
+							"sid": 122844460064961
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Goffman",
+									"sid": 497173972482996,
+									"parameters": {
+										"object": "Stair"
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Клавиатура",
+									"sid": 701012111705755,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Goffman",
+									"sid": 143047920427453,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"vector-y": "-100"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Goffman",
+									"sid": 645090576200499,
+									"parameters": {
+										"animation": "\"Gof_Up\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 844880188015192,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Goffman",
+											"sid": 736348920046290,
+											"parameters": {
+												"object": "Stair"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Goffman",
+											"sid": 219501500840676,
+											"parameters": {
+												"x": "Stair.X",
+												"y": "Goffman.Y"
+											}
+										}
+									],
+									"sid": 277213613642203
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Клавиатура",
+									"sid": 767896349072314,
+									"parameters": {
+										"key": 87
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Goffman",
+									"sid": 962651130276424,
+									"parameters": {
+										"object": "Stair"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-vector-y",
+									"objectClass": "Goffman",
+									"sid": 964730990412005,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"vector-y": "Goffman.Платформер.VectorY * 0"
+									}
+								},
+								{
+									"id": "set-gravity",
+									"objectClass": "Goffman",
+									"sid": 907240633443243,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"gravity": "0"
+									}
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Goffman",
+									"sid": 863331847751573
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Spear",
+									"sid": 175181525048144
+								}
+							],
+							"sid": 548136432585452
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Goffman",
+									"sid": 977688033940289,
+									"parameters": {
+										"object": "Stair"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-gravity",
+									"objectClass": "Goffman",
+									"sid": 609109020048978,
+									"behaviorType": "Платформер",
+									"parameters": {
+										"gravity": "1000"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Spear",
+									"sid": 371991383710095,
+									"parameters": {
+										"animation": "\"Spear_On_Guy\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 135691964101987
+						}
+					],
+					"sid": 778776237333822
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -115,293 +402,6 @@
 						}
 					],
 					"sid": 232295500616063
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Stairs",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "key-is-down",
-									"objectClass": "Клавиатура",
-									"sid": 970711509158482,
-									"parameters": {
-										"key": 83
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Goffman",
-									"sid": 197542945010189,
-									"parameters": {
-										"object": "Stair"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-vector-y",
-									"objectClass": "Goffman",
-									"sid": 283767463654588,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"vector-y": "100"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Goffman",
-									"sid": 743945552394832,
-									"parameters": {
-										"animation": "\"Gof_Up\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 796128160840697,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-overlapping-another-object",
-											"objectClass": "Goffman",
-											"sid": 846915170771347,
-											"parameters": {
-												"object": "Stair"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-position",
-											"objectClass": "Goffman",
-											"sid": 990971407369356,
-											"parameters": {
-												"x": "Stair.X",
-												"y": "Goffman.Y"
-											}
-										}
-									],
-									"sid": 836586222590858
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-released",
-									"objectClass": "Клавиатура",
-									"sid": 138232325685982,
-									"parameters": {
-										"key": 83
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Goffman",
-									"sid": 349756021891905,
-									"parameters": {
-										"object": "Stair"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-vector-y",
-									"objectClass": "Goffman",
-									"sid": 382301874370079,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"vector-y": "Goffman.Платформер.VectorY * 0"
-									}
-								},
-								{
-									"id": "set-gravity",
-									"objectClass": "Goffman",
-									"sid": 611461848984307,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"gravity": "0"
-									}
-								},
-								{
-									"id": "stop-animation",
-									"objectClass": "Goffman",
-									"sid": 375024527806313
-								},
-								{
-									"id": "stop-animation",
-									"objectClass": "Spear",
-									"sid": 726548195771391
-								}
-							],
-							"sid": 141990179929038
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Goffman",
-									"sid": 295816878801956,
-									"parameters": {
-										"object": "Stair"
-									}
-								},
-								{
-									"id": "key-is-down",
-									"objectClass": "Клавиатура",
-									"sid": 309080591965583,
-									"parameters": {
-										"key": 87
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-vector-y",
-									"objectClass": "Goffman",
-									"sid": 483197381640684,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"vector-y": "-100"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Goffman",
-									"sid": 577601704220579,
-									"parameters": {
-										"animation": "\"Gof_Up\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 254915280762080,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-overlapping-another-object",
-											"objectClass": "Goffman",
-											"sid": 766298672330915,
-											"parameters": {
-												"object": "Stair"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-position",
-											"objectClass": "Goffman",
-											"sid": 747584452551521,
-											"parameters": {
-												"x": "Stair.X",
-												"y": "Goffman.Y"
-											}
-										}
-									],
-									"sid": 397601030679172
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-released",
-									"objectClass": "Клавиатура",
-									"sid": 760160262200053,
-									"parameters": {
-										"key": 87
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Goffman",
-									"sid": 941194341855138,
-									"parameters": {
-										"object": "Stair"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-vector-y",
-									"objectClass": "Goffman",
-									"sid": 677504997902725,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"vector-y": "Goffman.Платформер.VectorY * 0"
-									}
-								},
-								{
-									"id": "set-gravity",
-									"objectClass": "Goffman",
-									"sid": 181672668097723,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"gravity": "0"
-									}
-								},
-								{
-									"id": "stop-animation",
-									"objectClass": "Goffman",
-									"sid": 226463777823968
-								},
-								{
-									"id": "stop-animation",
-									"objectClass": "Spear",
-									"sid": 813657645867426
-								}
-							],
-							"sid": 678419634133100
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Goffman",
-									"sid": 290642124937835,
-									"parameters": {
-										"object": "Stair"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-gravity",
-									"objectClass": "Goffman",
-									"sid": 145701391506694,
-									"behaviorType": "Платформер",
-									"parameters": {
-										"gravity": "1000"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Spear",
-									"sid": 446344329463646,
-									"parameters": {
-										"animation": "\"Spear_On_Guy\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 184788851134019
-						}
-					],
-					"sid": 502489844004567
 				},
 				{
 					"eventType": "block",
@@ -701,6 +701,90 @@
 						}
 					],
 					"sid": 947318068749893
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Goffman",
+							"sid": 184147267456091,
+							"parameters": {
+								"object": "Лёд"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-deceleration",
+							"objectClass": "Goffman",
+							"sid": 254192686773055,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"deceleration": "0"
+							}
+						}
+					],
+					"sid": 793276494684122
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Goffman",
+							"sid": 126345296009937,
+							"parameters": {
+								"object": "Лёд"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-deceleration",
+							"objectClass": "Goffman",
+							"sid": 116041715843005,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"deceleration": "1500"
+							}
+						}
+					],
+					"sid": 596657068387152
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Клавиатура",
+							"sid": 247297477087840,
+							"parameters": {
+								"key": 70
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Goffman",
+							"sid": 407537919030146,
+							"parameters": {
+								"object": "Гриб"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Goffman",
+							"sid": 324521511869428,
+							"parameters": {
+								"animation": "\"Gof_Eat\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 790213870718586
 				}
 			],
 			"sid": 478242992800650
@@ -3272,6 +3356,202 @@
 				}
 			],
 			"sid": 895280267732735
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "GuySer",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 537378877124559,
+							"parameters": {
+								"interval-seconds": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lava_ger",
+							"sid": 838203133710146,
+							"parameters": {
+								"object": "Lava_ball",
+								"layer": "2",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 409637394396058
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 151670971860597,
+							"parameters": {
+								"interval-seconds": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Lava_ger",
+							"sid": 176540920925116,
+							"parameters": {
+								"object": "Lava_ball2",
+								"layer": "2",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 486047223479363
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Lava_ball2",
+							"sid": 539976543118254,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Lava_ball2",
+							"sid": 837908153178108,
+							"behaviorType": "8Направлений",
+							"parameters": {
+								"vector-x": "-200"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Lava_ball2",
+							"sid": 680992129312594,
+							"behaviorType": "8Направлений",
+							"parameters": {
+								"vector-y": "-500"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "Lava_ball2",
+							"sid": 239356710257470,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"gravity": "1000"
+							}
+						}
+					],
+					"sid": 514527970251776
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Lava_ball",
+							"sid": 280539898597725,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Lava_ball",
+							"sid": 860394423849563,
+							"behaviorType": "8Направлений",
+							"parameters": {
+								"vector-x": "200"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Lava_ball",
+							"sid": 749161938491163,
+							"behaviorType": "8Направлений",
+							"parameters": {
+								"vector-y": "-500"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "Lava_ball",
+							"sid": 542084745009910,
+							"behaviorType": "Платформер",
+							"parameters": {
+								"gravity": "1000"
+							}
+						}
+					],
+					"sid": 728013722121129
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Goffman",
+							"sid": 599179639432933,
+							"parameters": {
+								"object": "Lava_ball"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "HP",
+							"sid": 166721118034545,
+							"parameters": {
+								"width": "HP.Width-10"
+							}
+						}
+					],
+					"sid": 624822299526101
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Goffman",
+							"sid": 734733388183785,
+							"parameters": {
+								"object": "Lava_ball2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "HP",
+							"sid": 845166176591723,
+							"parameters": {
+								"width": "HP.Width-10"
+							}
+						}
+					],
+					"sid": 801186059535163
+				}
+			],
+			"sid": 745778784866826
 		}
 	],
 	"sid": 567197488118894

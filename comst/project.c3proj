@@ -71,6 +71,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Направлений",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Fade",
 			"name": "Угасание",
 			"author": "Scirra",
@@ -176,7 +183,6 @@
 					"Icepeak",
 					"IronDoor_up",
 					"IronDoor_bot",
-					"Lava_ball",
 					"Lava_ger",
 					"Platform",
 					"Spawn",
@@ -192,7 +198,11 @@
 					"Stair",
 					"Platform2",
 					"Lever_Off2",
-					"Lever_On2"
+					"Lever_On2",
+					"Лёд",
+					"Гриб",
+					"Lava_ball",
+					"Lava_ball2"
 				],
 				"subfolders": [
 					{
@@ -237,7 +247,8 @@
 					"PortalOut",
 					"IceWall",
 					"Spear",
-					"SpearAtt"
+					"SpearAtt",
+					"GrossWall"
 				],
 				"subfolders": [],
 				"name": "Skills"

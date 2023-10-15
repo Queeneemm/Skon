@@ -175,7 +175,9 @@
 			"Light2",
 			"HPbar",
 			"HP",
-			"Mana"
+			"Mana",
+			"UNMana",
+			"ButtonF"
 		],
 		"subfolders": [
 			{
@@ -202,7 +204,9 @@
 					"Лёд",
 					"Гриб",
 					"Lava_ball",
-					"Lava_ball2"
+					"Lava_ball2",
+					"Platform3",
+					"Platform4"
 				],
 				"subfolders": [
 					{
@@ -221,7 +225,16 @@
 					"Slime",
 					"Slime_bul"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"SlimeBar",
+							"SlimeHp"
+						],
+						"subfolders": [],
+						"name": "HUD"
+					}
+				],
 				"name": "Enemy"
 			},
 			{
@@ -295,7 +308,15 @@
 		]
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"Slime",
+				"SlimeBar",
+				"SlimeHp"
+			]
+		}
+	],
 	"families": {
 		"items": [],
 		"subfolders": []

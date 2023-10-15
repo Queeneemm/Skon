@@ -752,39 +752,6 @@
 						}
 					],
 					"sid": 596657068387152
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Клавиатура",
-							"sid": 247297477087840,
-							"parameters": {
-								"key": 70
-							}
-						},
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Goffman",
-							"sid": 407537919030146,
-							"parameters": {
-								"object": "Гриб"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Goffman",
-							"sid": 324521511869428,
-							"parameters": {
-								"animation": "\"Gof_Eat\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 790213870718586
 				}
 			],
 			"sid": 478242992800650
@@ -823,6 +790,16 @@
 					"sid": 996509467099561,
 					"parameters": {
 						"key": 69
+					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 518457103349519,
+					"parameters": {
+						"first-value": "Mana.MANA",
+						"comparison": 4,
+						"second-value": "0"
 					}
 				}
 			],
@@ -922,10 +899,10 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Box",
-							"sid": 993916351503633,
+							"sid": 880464268272798,
 							"behaviorType": "Физика",
 							"parameters": {
-								"impulse": "0.7",
+								"impulse": "0.3",
 								"angle": "0",
 								"image-point": "0"
 							}
@@ -946,10 +923,10 @@
 						{
 							"id": "apply-impulse-at-angle",
 							"objectClass": "Box",
-							"sid": 811443079929001,
+							"sid": 389302534176498,
 							"behaviorType": "Физика",
 							"parameters": {
-								"impulse": "0.7",
+								"impulse": "0.3",
 								"angle": "180",
 								"image-point": "0"
 							}
@@ -1058,27 +1035,6 @@
 						}
 					],
 					"sid": 158734295508067
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "SpearAtt",
-							"sid": 376569870190456,
-							"parameters": {
-								"object": "Slime"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "Slime",
-							"sid": 334411553625616
-						}
-					],
-					"sid": 270254089538105
 				}
 			],
 			"sid": 792591111927928
@@ -1766,16 +1722,6 @@
 			"sid": 496924899798041
 		},
 		{
-			"eventType": "variable",
-			"name": "HP",
-			"type": "number",
-			"initialValue": "48",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 181127389995796
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2277,6 +2223,16 @@
 						"mouse-button": "left",
 						"click-type": "double-clicked"
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 469858945389039,
+					"parameters": {
+						"first-value": "Mana.MANA",
+						"comparison": 4,
+						"second-value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -2335,11 +2291,11 @@
 				{
 					"id": "apply-impulse",
 					"objectClass": "Box",
-					"sid": 100743287158690,
+					"sid": 226972451264819,
 					"behaviorType": "Физика",
 					"parameters": {
 						"impulse-x": "0",
-						"implulse-y": "-1",
+						"implulse-y": "-0.3",
 						"image-point": "0"
 					}
 				}
@@ -3288,6 +3244,103 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "SlimeHP",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 574912750639640
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "SlimeBar",
+									"sid": 200553095335841,
+									"parameters": {
+										"x": "Slime.X",
+										"y": "Slime.Y+6"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "SlimeHp",
+									"sid": 383102942849880,
+									"parameters": {
+										"x": "Slime.X-1",
+										"y": "Slime.Y+6"
+									}
+								}
+							],
+							"sid": 610237127531514
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Slime",
+									"sid": 625296562473122,
+									"parameters": {
+										"object": "SpearAtt"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "SlimeHp",
+									"sid": 126679781052061,
+									"parameters": {
+										"instance-variable": "SlimeHP",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-width",
+									"objectClass": "SlimeHp",
+									"sid": 260619209597327,
+									"parameters": {
+										"width": "SlimeHp.Width-2"
+									}
+								}
+							],
+							"sid": 842499731551848
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "SlimeHp",
+									"sid": 740030147925621,
+									"parameters": {
+										"instance-variable": "SlimeHP",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Slime",
+									"sid": 668113748000602
+								}
+							],
+							"sid": 839352316902747
+						}
+					],
+					"sid": 338335666154677
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -3323,39 +3376,372 @@
 								"x": "HPbar.X+1",
 								"y": "HPbar.Y+5"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "UNMana",
+							"sid": 583408166344738,
+							"parameters": {
+								"x": "Mana.X",
+								"y": "Mana.Y"
+							}
 						}
 					],
-					"sid": 850990838549187,
-					"children": [
+					"sid": 850990838549187
+				},
+				{
+					"eventType": "block",
+					"conditions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Goffman",
-									"sid": 225338428406906,
-									"parameters": {
-										"object": "Slime"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-size",
-									"objectClass": "HP",
-									"sid": 874387536067083,
-									"parameters": {
-										"width": "HP.Width - 10",
-										"height": "HP.Height"
-									}
-								}
-							],
-							"sid": 655223984296887
+							"id": "on-collision-with-another-object",
+							"objectClass": "Goffman",
+							"sid": 102104209991385,
+							"parameters": {
+								"object": "Slime"
+							}
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "Goffman",
+							"sid": 671559095647038
 						}
-					]
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "HP",
+							"sid": 442995077328222,
+							"parameters": {
+								"instance-variable": "Helth",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Goffman",
+							"sid": 230647814726455,
+							"parameters": {
+								"x": "Goffman.X+5"
+							}
+						}
+					],
+					"sid": 232033407586522
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Goffman",
+							"sid": 729002295000841,
+							"parameters": {
+								"object": "Slime"
+							}
+						},
+						{
+							"id": "is-mirrored",
+							"objectClass": "Goffman",
+							"sid": 432759522533051,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "HP",
+							"sid": 291920686195682,
+							"parameters": {
+								"instance-variable": "Helth",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Goffman",
+							"sid": 327508060939820,
+							"parameters": {
+								"x": "Goffman.X-5"
+							}
+						}
+					],
+					"sid": 887854159892193
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "HP",
+							"sid": 706938237939067,
+							"parameters": {
+								"instance-variable": "Helth",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Goffman",
+							"sid": 334181627171618
+						}
+					],
+					"sid": 798229167129872
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Клавиатура",
+							"sid": 765809169725741,
+							"parameters": {
+								"key": 69
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Mana",
+							"sid": 487051591302711,
+							"parameters": {
+								"instance-variable": "MANA",
+								"value": "7"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 190456818576344,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Mana",
+							"sid": 179099809441575,
+							"parameters": {
+								"instance-variable": "MANA",
+								"value": "7"
+							}
+						}
+					],
+					"sid": 191380825372357
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Мышь",
+							"sid": 263341497284433,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "double-clicked"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Mana",
+							"sid": 963121079203682,
+							"parameters": {
+								"instance-variable": "MANA",
+								"value": "7"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 477253165119225,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Mana",
+							"sid": 715016609231609,
+							"parameters": {
+								"instance-variable": "MANA",
+								"value": "7"
+							}
+						}
+					],
+					"sid": 422087040243993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 171101944576078
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "Mana",
+							"sid": 103023896284184,
+							"parameters": {
+								"width": "Mana.MANA"
+							}
+						}
+					],
+					"sid": 621611947246027
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 737564470743197
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "HP",
+							"sid": 759207787905944,
+							"parameters": {
+								"width": "HP.Helth"
+							}
+						}
+					],
+					"sid": 227046480270979
 				}
 			],
 			"sid": 895280267732735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Клавиатура",
+					"sid": 229675904030887,
+					"parameters": {
+						"key": 70
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Goffman",
+					"sid": 281941052758122,
+					"parameters": {
+						"object": "Гриб"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Goffman",
+					"sid": 793155832032021,
+					"parameters": {
+						"animation": "\"Gof_Eat\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "HP",
+					"sid": 137062756327519,
+					"parameters": {
+						"instance-variable": "Helth",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 677594333379283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 177481702277007
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Гриб",
+					"sid": 719037079912128,
+					"parameters": {
+						"object": "ButtonF",
+						"layer": "5",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "ButtonF",
+					"sid": 165803887770165,
+					"parameters": {
+						"x": "Гриб.X",
+						"y": "Гриб.Y-10"
+					}
+				}
+			],
+			"sid": 674155240407345
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Goffman",
+					"sid": 789596521192992,
+					"parameters": {
+						"object": "Гриб"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonF",
+					"sid": 234568193730625,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 948140584189179
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Goffman",
+					"sid": 980162294415505,
+					"parameters": {
+						"object": "Гриб"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonF",
+					"sid": 823038208986306,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 430757250511199
 		},
 		{
 			"eventType": "group",
@@ -3514,16 +3900,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-width",
-							"objectClass": "HP",
-							"sid": 166721118034545,
-							"parameters": {
-								"width": "HP.Width-10"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 624822299526101
 				},
 				{
@@ -3538,16 +3915,7 @@
 							}
 						}
 					],
-					"actions": [
-						{
-							"id": "set-width",
-							"objectClass": "HP",
-							"sid": 845166176591723,
-							"parameters": {
-								"width": "HP.Width-10"
-							}
-						}
-					],
+					"actions": [],
 					"sid": 801186059535163
 				}
 			],

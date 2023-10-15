@@ -1,41 +1,39 @@
 {
-	"name": "Mana",
+	"name": "Platform4",
 	"plugin-id": "Sprite",
-	"sid": 656139675653658,
+	"sid": 953555096369576,
 	"isGlobal": false,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "MANA",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 233172645519595
+			"behaviorId": "jumpthru",
+			"name": "СквознаяПлатформа",
+			"sid": 779260627777998
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 28,
-						"height": 5,
-						"originX": 0,
-						"originY": 0.6,
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2276454,
+						"imageSpriteId": 1418744,
 						"collisionPoly": {
 							"points": [
-								0.05357142857142857,
 								0,
-								0.9464285714285714,
-								0,
-								0.9464285714285714,
+								0.49218750000000017,
 								1,
-								0.05357142857142857,
+								0.49531250000000027,
+								1,
+								1,
+								0,
 								1
 							]
 						},
@@ -44,8 +42,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 632492353423311,
-				"name": "Animation 1",
+				"sid": 664807613359124,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

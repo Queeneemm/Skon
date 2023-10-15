@@ -3,7 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 585765975841330,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Helth",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 142658720913629
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,7 +26,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8097370,
+						"imageSpriteId": 2732752,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

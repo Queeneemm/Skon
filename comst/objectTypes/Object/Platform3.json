@@ -1,19 +1,24 @@
 {
-	"name": "Box",
+	"name": "Platform3",
 	"plugin-id": "Sprite",
-	"sid": 746411160612624,
+	"sid": 179788312941914,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Physics",
-			"name": "Физика",
-			"sid": 513802374315817
+			"behaviorId": "Sin",
+			"name": "Синусоид",
+			"sid": 281872666513997
 		},
 		{
-			"behaviorId": "solid",
-			"name": "Твердый",
-			"sid": 877779833617744
+			"behaviorId": "jumpthru",
+			"name": "СквознаяПлатформа",
+			"sid": 425553831185477
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Физика",
+			"sid": 120964980546449
 		}
 	],
 	"effectTypes": [],
@@ -22,23 +27,23 @@
 			{
 				"frames": [
 					{
-						"width": 12,
-						"height": 9,
+						"width": 10,
+						"height": 10,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3858684,
+						"imageSpriteId": 4448680,
 						"collisionPoly": {
 							"points": [
-								0.1679687499999998,
-								0.21527777777777776,
-								0.8307291666666667,
-								0.22222222222222218,
-								0.8333333333333331,
+								0,
+								0.49218750000000017,
 								1,
-								0.1640625000000001,
+								0.49531250000000027,
+								1,
+								1,
+								0,
 								1
 							]
 						},
@@ -47,7 +52,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 758100832016092,
+				"sid": 795386059307289,
 				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,

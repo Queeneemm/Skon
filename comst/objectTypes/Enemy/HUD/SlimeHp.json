@@ -1,15 +1,15 @@
 {
-	"name": "Mana",
+	"name": "SlimeHp",
 	"plugin-id": "Sprite",
-	"sid": 656139675653658,
+	"sid": 625203170837924,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "MANA",
+			"name": "SlimeHP",
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 233172645519595
+			"sid": 739084225946986
 		}
 	],
 	"behaviorTypes": [],
@@ -19,32 +19,20 @@
 			{
 				"frames": [
 					{
-						"width": 28,
-						"height": 5,
-						"originX": 0,
-						"originY": 0.6,
+						"width": 6,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2276454,
-						"collisionPoly": {
-							"points": [
-								0.05357142857142857,
-								0,
-								0.9464285714285714,
-								0,
-								0.9464285714285714,
-								1,
-								0.05357142857142857,
-								1
-							]
-						},
+						"imageSpriteId": 819458,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 632492353423311,
+				"sid": 373120877622113,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
